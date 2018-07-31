@@ -1,0 +1,43 @@
+menu "Demo Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "wifi-11"
+	help
+		SSID (network name) to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "sumof1+1=2"
+	help
+		WiFi password (WPA or WPA2) to use.
+
+		Can be left blank if the network has no security set.
+
+endmenu
+
+menu "Choose Demo"
+
+choice M_MQTT_EXAMPLE
+    prompt "Default example"
+    default M_MQTT_EXAMPLE
+    help
+        Default baud rate to use while communicating with the ESP chip. Can be overridden by
+        setting the ESPBAUD variable.
+
+config M_MQTT_EXAMPLE
+    bool "mqtt-example"
+config M_OTA_MQTT_EXAMPLE
+    bool "ota-mqtt-example"
+endchoice
+
+config MQTT_EXAMPLE
+    int 
+    default 1 if M_MQTT_EXAMPLE
+    default 0 if M_OTA_MQTT_EXAMPLE
+config OTA_MQTT_EXAMPLE
+    int
+    default 1 if M_OTA_MQTT_EXAMPLE
+    default 0 if M_MQTT_EXAMPLE
+
+endmenu

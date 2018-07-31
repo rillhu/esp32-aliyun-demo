@@ -1,0 +1,6 @@
+[submodule "components/esp32-aliyun"]
+	path = components/esp32-aliyun
+	url = https://github.com/espressif/esp32-aliyun.git
+[submodule "esp-idf"]
+	path = esp-idf
+	url = https://github.com/espressif/esp-idf.git
