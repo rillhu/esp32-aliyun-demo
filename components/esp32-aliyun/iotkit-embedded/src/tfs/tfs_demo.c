@@ -21,7 +21,7 @@
 #include <string.h>
 #include <inttypes.h>
 
-#include "tfs.h"
+#include "tfs/tfs.h"
 #include "iot_import.h"
 
 #define BUF_MAX 512
