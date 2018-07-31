@@ -1,5 +1,18 @@
 # esp32-aliyun-demo  
 
+# #Update
+
+- 更新esp-idf为esp-idf v3.0.2
+- 更新component下的esp-aliyun的mk文件。
+- 调整IOTkit V2.0.1的tfs下的代码
+-  使用最新的windows下的msys32编译下载通过
+
+
+
+- Note：需要在阿里云物联网平台建立基础版的产品，并新增/data topic类
+
+
+
 ## 1. 阿里云物联网套件简介
 
 ![](https://i.imgur.com/OqjGiQL.png)
@@ -8,7 +21,7 @@
 
 > - IoT Hub  
 >  为设备和物联网应用程序提供发布和接收消息的安全通道。
->   详情请参考 [IoT Hub](https://help.aliyun.com/document_detail/30548.html?spm=5176.doc30523.2.1.WtHk0t)
+>     详情请参考 [IoT Hub](https://help.aliyun.com/document_detail/30548.html?spm=5176.doc30523.2.1.WtHk0t)
 > - 安全认证&权限策略
 > - 规则引擎
 > - 设备影子
@@ -47,7 +60,7 @@ esp32-aliyun-demo
 ├── Makefile                                //编译入口 makefile
 ├── set_env.sh                              //一键搭建编译环境脚本(linux)
 └── README.md
-```  
+```
 在用户进行开发时：  
 所有和 `iotkit-embedded` 中相关的功能函数均只需要调用 `iot_export.h` 和 `iot_import.h`两个头文件，无须关心其他头文件；  
 所有和 `esp-idf` 相关的功能函数需要参考 `esp-idf` 具体实现。  
@@ -63,7 +76,7 @@ esp32-aliyun-demo
 - 如果是在 ubuntu x64 下进行开发，则只需要在 PC 有网络连接时运行 `set_env.sh` 脚本一键完成编译环境的搭建。  
 
 - 本 Demo 适配于 [esp-idf](https://github.com/espressif/esp-idf), 如果已经在开发环境下对 esp-idf 进行过配置，则无须运行 `set_env.sh` 脚本。
- 
+
 
 - 如果是在其他平台下进行开发，具体请参考 [Get Started](http://esp-idf.readthedocs.io/en/latest/get-started/index.html).
 
@@ -262,7 +275,7 @@ key usage         : Key Cert Sign, CRL Sign
         event_handle|089 :: publish success, packet-id=2
         mqtt_client|225 :: wait ota upgrade command....
         mqtt_client|225 :: wait ota upgrade command....  
-        
+    
 * 此时在 IoT 控制台进行验证或者批量烧写操作，则会开始 OTA 过程，终端显示 ESP32 通过 MQTT 从控制台得到的 BIN 文件的 url， 然后开始下载和擦写 flash， 终端输出如下：  
 
 ![](https://i.imgur.com/VrQ6sWQ.jpg)
@@ -297,12 +310,12 @@ key usage         : Key Cert Sign, CRL Sign
         [inf] httpclient_recv(381): 255 bytes has been read
         [inf] httpclient_recv(381): 255 bytes has been read
         [inf] httpclient_recv(381): 255 bytes has been read
-        
+
 循环擦写直到将 BIN 文件传输完毕，ESP32 进行重启。  
 
         mqtt_client|282 :: The firmware is valid
         I (32261) OTA-MQTT: Prepare to restart system!  
-        
+
 至此，OTA 升级完毕。
 
 *注意： 在升级完成后需要向控制台上报新的版本号，否则虽然升级完成但是控制台会显示升级失败。*
