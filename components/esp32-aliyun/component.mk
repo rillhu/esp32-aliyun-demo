@@ -8,7 +8,6 @@ CFLAGS += -D OTA_SIGNAL_CHANNEL=1
 CFLAGS += -D MQTT_COMM_ENABLED
 endif
 COMPONENT_ADD_INCLUDEDIRS := platform/os/include \
-							iotkit-embedded/src/tfs \
 							iotkit-embedded/src/tfs/platform \
 							iotkit-embedded/src/sdk-impl/exports \
 							iotkit-embedded/src/sdk-impl/imports \
@@ -19,14 +18,11 @@ COMPONENT_ADD_INCLUDEDIRS := platform/os/include \
 							iotkit-embedded/src/packages/LITE-utils \
 							iotkit-embedded/src/utils/digest \
 							iotkit-embedded/src/utils/misc \
-							iotkit-embedded/src/import/linux/include \
-							iotkit-embedded/src/import/linux/include/tfs \
 							iotkit-embedded/src/system \
 							iotkit-embedded/src/guider \
 							iotkit-embedded/src/security
 
 COMPONENT_SRCDIRS := platform/os/esp32 \
-					iotkit-embedded/src/tfs \
 					iotkit-embedded/src/tfs/platform \
 					iotkit-embedded/src \
 					platform/ssl/mbedtls \

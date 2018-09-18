@@ -30,7 +30,6 @@
 
 #include "iot_import.h"
 #include "sdk-impl_internal.h"
-#include "id2_crypto.h"
 
 void mygettimeofday(struct timeval *tv, void *tz)
 {

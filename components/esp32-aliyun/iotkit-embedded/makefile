@@ -4,7 +4,7 @@ include src/scripts/parse_make_settings.mk
 
 ifeq (gcc,$(strip $(PLATFORM_CC)))
 SUBDIRS += src/platform
-SUBDIRS += sample
+#SUBDIRS += sample
 SUBDIRS += src/sdk-tests
 endif
 
