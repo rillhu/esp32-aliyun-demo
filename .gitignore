@@ -1,3 +1,10 @@
+# Example project files
+examples/**/sdkconfig
+examples/**/sdkconfig.old
+examples/**/build
+examples/**/*.si4project/*
+.vscode/
+
 # Prerequisites
 *.d
 

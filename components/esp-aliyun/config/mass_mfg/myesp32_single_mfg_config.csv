@@ -1,0 +1,6 @@
+key,type,encoding,value
+aliyun-key,namespace,,
+DeviceName,data,string,esp32-basic
+DeviceSecret,data,string,9OMKtRPNGmb2UPKIca6aECpbluuDtZxf
+ProductKey,data,string,a1Baj2iis4G
+ProductSecret,data,string,czNPjZe167LXiidF
