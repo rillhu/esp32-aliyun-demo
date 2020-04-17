@@ -4,6 +4,7 @@ examples/**/sdkconfig.old
 examples/**/build
 examples/**/*.si4project/*
 .vscode/
+examples/**/.vscode/*
 
 # Prerequisites
 *.d
