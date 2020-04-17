@@ -141,8 +141,8 @@ static int user_property_set_event_handler(const int devid, const char *request,
     cJSON *root = NULL, *LightSwitch = NULL, *LightColor = NULL;
     ESP_LOGI(TAG,"Property Set Received, Devid: %d, Request: %s", devid, request);
     
-    lightbulb_set_brightness(78);
-    lightbulb_set_saturation(100);
+    //lightbulb_set_brightness(78);
+    //lightbulb_set_saturation(100);
     
     if (!request) {
         return NULL_VALUE_ERROR;
@@ -160,7 +160,7 @@ static int user_property_set_event_handler(const int devid, const char *request,
     if (LightSwitch) {
         lightbulb_set_on(LightSwitch->valueint);
     } 
-
+#if 0 //RGB
     /** Switch Lightbulb Hue */
     LightSwitch = cJSON_GetObjectItem(root, "RGBColor");
     if (LightSwitch) {
@@ -171,7 +171,19 @@ static int user_property_set_event_handler(const int devid, const char *request,
         LightColor = cJSON_GetObjectItem(LightSwitch, "Blue");
         lightbulb_set_hue(LightColor ? LightColor->valueint : 240);
     }
-    
+#endif   
+#if 1 //HSL
+    /** Switch Lightbulb Hue */
+    LightSwitch = cJSON_GetObjectItem(root, "HSLColor");
+    if (LightSwitch) {
+        LightColor = cJSON_GetObjectItem(LightSwitch, "Lightness");
+        lightbulb_set_brightness(LightColor ? LightColor->valueint : 0);
+        LightColor = cJSON_GetObjectItem(LightSwitch, "Saturation");
+        lightbulb_set_saturation(LightColor ? LightColor->valueint : 120);
+        LightColor = cJSON_GetObjectItem(LightSwitch, "Hue");
+        lightbulb_set_hue(LightColor ? LightColor->valueint : 240);
+    } 
+#endif
     cJSON_Delete(root);
 
     res = IOT_Linkkit_Report(EXAMPLE_MASTER_DEVID, ITM_MSG_POST_PROPERTY,

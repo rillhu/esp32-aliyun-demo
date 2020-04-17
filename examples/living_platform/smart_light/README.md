@@ -31,6 +31,12 @@ $IDF_PATH/components/esptool_py/esptool/esptool.py --port COM17 write_flash 0x21
 
 
 
+Note： According to current code, the example `smartlight` uses the `hsb2rgb()` function, so it looks that the app should use the HSL/HSV color modulation. And the code should be updated accordingly.
+
+<img src="README.assets/hsl.png" style="zoom: 80%;" />
+
+ 
+
 
 
 # Smart Light 解决方案
