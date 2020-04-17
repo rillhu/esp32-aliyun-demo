@@ -105,7 +105,7 @@ static void lightbulb_set_aim(uint32_t r, uint32_t g, uint32_t b, uint32_t cw, u
     r = r*255/100;
     g = g*255/100;
     b = b*255/100;
-    //ESP_LOGI(TAG,"r:%d,g:%d,b:%d", r, g, b);
+    ESP_LOGI(TAG,"r:%d,g:%d,b:%d", r, g, b);
 
     struct led_state new_state;
     for (size_t i = 0; i < NUM_LEDS; i++)
@@ -186,9 +186,10 @@ static bool lightbulb_set_aim_hsv(uint16_t h, uint16_t s, uint16_t v)
     if (ret == false)
         return false;
 
-    lightbulb_set_aim(rgb_tmp.r * PWM_TARGET_DUTY / 100, rgb_tmp.g * PWM_TARGET_DUTY / 100,
-            rgb_tmp.b * PWM_TARGET_DUTY / 100, (100 - s) * 5000 / 100, v * 2000 / 100, 1000);
+ //   lightbulb_set_aim(rgb_tmp.r * PWM_TARGET_DUTY / 100, rgb_tmp.g * PWM_TARGET_DUTY / 100,
+ //           rgb_tmp.b * PWM_TARGET_DUTY / 100, (100 - s) * 5000 / 100, v * 2000 / 100, 1000);
 
+    lightbulb_set_aim(rgb_tmp.r,  rgb_tmp.g , rgb_tmp.b , (100 - s) * 5000 / 100, v * 2000 / 100, 1000);
     return true;
 }
 
