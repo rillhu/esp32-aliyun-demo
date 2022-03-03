@@ -220,6 +220,9 @@ static int user_property_get_event_handler(const int devid, const char *servicei
 }
 
 
+//Originally, aliyun send the hsv command from user_property_set_event_handler() @2020
+//But it looks it changes the command to user_service_request_event_handler sometime later. 
+//So I update the code from 2022
 static int user_service_request_event_handler(const int devid, const char *serviceid, const int serviceid_len,
         const char *request, const int request_len,
         char **response, int *response_len)
@@ -229,7 +232,70 @@ static int user_service_request_event_handler(const int devid, const char *servi
     ESP_LOGI(TAG,"Service Request Received, Devid: %d, Service ID: %.*s, Payload: %s", devid, serviceid_len,
                   serviceid,
                   request);
+    cJSON *params = NULL, *LightSwitchRoot = NULL,*LightSwitch = NULL, *HSVColorRoot = NULL, *HSVColor = NULL, *HSV = NULL;
 
+    /* Parse Root */
+    root = cJSON_Parse(request);
+    if (!root) {
+        ESP_LOGI(TAG,"JSON Parse Error");
+        return FAIL_RETURN;
+    }
+
+    //printf("root: \n%s\n", cJSON_Print(root));
+
+    /*Parse the command from aliyun*/
+    params = cJSON_GetObjectItem(root, "params");
+    if (params) {
+        //printf("params: \n%s\n", cJSON_Print(params));
+
+        //!!!Note:
+        //It looks aliyun add an new item 'params' into the JSON format command.
+        //And aliyun change the params to a structured c format string.
+        //We need format the string to a cJSON object by call cJSON_Parse() again here!!!
+        
+        //!!!And note: before call cJSON_GetObjectItem, if the string is not standard cJSON format Object,
+        //Try to use cJSON_Parse to format the string.
+
+        /*light on/off*/
+        LightSwitchRoot = cJSON_Parse(params->valuestring);
+        if (!LightSwitchRoot) {
+            ESP_LOGI(TAG,"JSON Parse LightSwitchRoot Error");
+            return FAIL_RETURN;
+        }
+        //printf("LightSwitchRoot: \n%s\n", cJSON_Print(LightSwitchRoot));
+        LightSwitch = cJSON_GetObjectItem(LightSwitchRoot, "LightSwitch");
+        if(LightSwitch){
+            printf("LightSwitch: %d", LightSwitch->valueint);
+            lightbulb_set_on(LightSwitch->valueint);
+        }
+
+        /*HSV£º{\"HSVColor\":{\"Hue\":158,\"Saturation\":100,\"Value\":98}} */
+        HSVColorRoot = cJSON_Parse(params->valuestring);
+        if (!HSVColorRoot) {
+            ESP_LOGI(TAG,"JSON Parse HSVColorRoot Error");
+            return FAIL_RETURN;
+        }
+        //printf("HSVColorRoot: \n%s\n", cJSON_Print(HSVColorRoot));
+        HSVColor = cJSON_GetObjectItem(HSVColorRoot, "HSVColor");
+        if(HSVColor){ 
+            //printf("HSVColor: \n%s\n", cJSON_Print(HSVColor));
+            HSV = cJSON_GetObjectItem(HSVColor, "Hue"); //HUE
+            ESP_LOGI(TAG,"Hue:%d", HSV->valueint);
+            lightbulb_set_hue(HSV ? HSV->valueint : 240);
+            HSV = cJSON_GetObjectItem(HSVColor, "Saturation");//Saturation
+            ESP_LOGI(TAG,"Saturation:%d", HSV->valueint);
+            lightbulb_set_saturation(HSV ? HSV->valueint : 120);
+            HSV = cJSON_GetObjectItem(HSVColor, "Value"); //Value
+            ESP_LOGI(TAG,"Value:%d", HSV->valueint);
+            lightbulb_set_brightness(HSV ? HSV->valueint : 0);
+        }        
+    } 
+
+    cJSON_Delete(root);
+    cJSON_Delete(LightSwitchRoot);
+    cJSON_Delete(HSVColorRoot);
+
+#if 0
     /* Parse Root */
     root = cJSON_Parse(request);
     if (root == NULL || !cJSON_IsObject(root)) {
@@ -280,8 +346,9 @@ static int user_service_request_event_handler(const int devid, const char *servi
         snprintf(*response, *response_len, response_fmt, to_cloud);
         *response_len = strlen(*response);
     }
-    cJSON_Delete(root);
 
+    cJSON_Delete(root);
+#endif
     return 0;
 }
 

@@ -1,0 +1,2823 @@
+
+hongf@surfacePro7 MINGW32 ~
+$ export IDF_PATH="d:\Codes\esp-idf-v3.3.4"
+
+hongf@surfacePro7 MINGW32 ~
+$ cd "d:\Git\esp32-aliyun-demo\examples\living_platform\led_strip"
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip
+$ make chip=esp32 defconfig -j8 && make menuconfig -j8
+Toolchain path: /opt/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-96-g28523988
+Compiler version: 5.2.0
+DEFCONFIG
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:783:warning: override: reassigning to symbol ESPTOOLPY_BAUD_921600B
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:783:warning: override: ESPTOOLPY_BAUD_921600B changes choice state
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:785:warning: override: reassigning to symbol ESPTOOLPY_FLASHSIZE_4MB
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:785:warning: override: ESPTOOLPY_FLASHSIZE_4MB changes choice state
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:787:warning: override: reassigning to symbol TIMER_TASK_STACK_DEPTH
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:789:warning: override: reassigning to symbol PARTITION_TABLE_CUSTOM
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:789:warning: override: PARTITION_TABLE_CUSTOM changes choice state
+/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig:790:warning: override: reassigning to symbol PARTITION_TABLE_CUSTOM_FILENAME
+#
+# configuration written to /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/sdkconfig
+#
+Toolchain path: /opt/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-96-g28523988
+Compiler version: 5.2.0
+MENUCONFIG
+
+
+*** End of the configuration.
+*** Execute 'make' to start the build or try 'make help'.
+
+GENCONFIG
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 1 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 1 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.92 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.91 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.9 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.89 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.89 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.86 秒后
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.18 秒后
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.16 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.14 秒后
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.074 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.074 秒后
+make[1]: 警告：文件“/d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/build/include/config/auto.conf”的修改时间在未来 0.052 秒后
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+make[1]: 警告：检测到时钟错误。您的构建版本可能是不完整的。
+App "led_strip" version: 0c0f84b-dirty
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip
+$ make flash monitor -j8
+Toolchain path: /opt/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-96-g28523988
+Compiler version: 5.2.0
+CC build/app_trace/app_trace.o
+CC build/bootloader_support/src/bootloader_clock.o
+CXX build/asio/asio/asio/src/asio.o
+Python requirements from D:/Codes/esp-idf-v3.3.4/requirements.txt are satisfied.
+CC build/coap/libcoap/src/address.o
+CC build/bt/bt.o
+CC build/console/commands.o
+CC build/bootloader_support/src/bootloader_common.o
+App "led_strip" version: 0c0f84b-dirty
+CC build/app_trace/app_trace_util.o
+CC build/app_update/esp_app_desc.o
+AR build/console/libconsole.a
+AR build/bt/libbt.a
+CC build/coap/libcoap/src/async.o
+CXX build/cxx/cxx_exception_stubs.o
+CC build/app_update/esp_ota_ops.o
+CC build/bootloader_support/src/bootloader_flash.o
+CC build/app_trace/host_file_io.o
+CC build/driver/can.o
+CC build/coap/libcoap/src/block.o
+CC build/bootloader_support/src/bootloader_flash_config.o
+CXX build/cxx/cxx_guards.o
+CC build/app_trace/gcov/gcov_rtio.o
+AR build/app_update/libapp_update.a
+CC build/driver/gpio.o
+CC build/bootloader_support/src/bootloader_random.o
+CC build/efuse/esp32/esp_efuse_table.o
+AR build/app_trace/libapp_trace.a
+CC build/coap/libcoap/src/coap_time.o
+CC build/driver/i2c.o
+CC build/efuse/src/esp_efuse_api.o
+CC build/bootloader_support/src/bootloader_sha.o
+CC build/esp-aliyun/conn_mgr/conn_mgr.o
+CC build/efuse/src/esp_efuse_fields.o
+CC build/coap/libcoap/src/debug.o
+CC build/bootloader_support/src/bootloader_utility.o
+AR build/cxx/libcxx.a
+CC build/efuse/src/esp_efuse_utility.o
+CC build/esp-tls/esp_tls.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_bind.o
+CC build/driver/i2s.o
+CC build/bootloader_support/src/esp_image_format.o
+CC build/coap/libcoap/src/encode.o
+AR build/efuse/libefuse.a
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_bind_statis.o
+CC build/esp32/brownout.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_cmp_coap.o
+CC build/bootloader_support/src/flash_encrypt.o
+AR build/esp-tls/libesp-tls.a
+CC build/coap/libcoap/src/mem.o
+CC build/driver/ledc.o
+CC build/esp_adc_cal/esp_adc_cal.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_cmp_mqtt.o
+CC build/esp32/cache_err_int.o
+CC build/bootloader_support/src/flash_partitions.o
+CC build/coap/libcoap/src/net.o
+AR build/esp_adc_cal/libesp_adc_cal.a
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_event.o
+CC build/esp32/cache_sram_mmu.o
+CC build/bootloader_support/src/flash_qio_mode.o
+CC build/driver/mcpwm.o
+CC build/esp_event/default_event_loop.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_info.o
+CC build/esp32/clk.o
+CC build/bootloader_support/src/secure_boot.o
+CC build/coap/libcoap/src/option.o
+CC build/esp_event/esp_event.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_notify.o
+AR build/asio/libasio.a
+CC build/driver/pcnt.o
+CC build/esp32/coexist.o
+CC build/bootloader_support/src/secure_boot_signatures.o
+CC build/esp32/cpu_start.o
+CC build/coap/libcoap/src/pdu.o
+AR build/bootloader_support/libbootloader_support.a
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_packet.o
+CC build/esp_event/esp_event_private.o
+CC build/driver/periph_ctrl.o
+CC build/esp_http_client/esp_http_client.o
+CC build/esp_http_server/src/httpd_main.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_report.o
+CC build/esp32/crosscore_int.o
+CC build/driver/rmt.o
+AR build/esp_event/libesp_event.a
+CC build/coap/libcoap/src/resource.o
+CC build/esp_http_client/lib/http_auth.o
+CC build/esp_https_ota/src/esp_https_ota.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_timer.o
+CC build/esp32/dbg_stubs.o
+CC build/esp_http_server/src/httpd_parse.o
+CC build/driver/rtc_module.o
+CC build/coap/libcoap/src/str.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/passwd.o
+CC build/esp32/dport_access.o
+AR build/esp_https_ota/libesp_https_ota.a
+CC build/esp_http_client/lib/http_header.o
+CC build/esp_https_server/src/https_server.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/sha256.o
+CC build/esp_http_server/src/httpd_sess.o
+CC build/esp32/esp_adapter.o
+CC build/coap/libcoap/src/subscribe.o
+CC build/esp_http_client/lib/http_utils.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/os/os_misc.o
+AR build/esp_https_server/libesp_https_server.a
+CC build/driver/sdio_slave.o
+AR build/esp_http_client/libesp_http_client.a
+CC build/esp_ringbuf/ringbuf.o
+CC build/esp_http_server/src/httpd_txrx.o
+CC build/esp_websocket_client/esp_websocket_client.o
+CC build/bootloader/bootloader_support/src/bootloader_clock.o
+CC build/coap/libcoap/src/uri.o
+CC build/esp-aliyun/iotkit-embedded/dev_bind/impl/awss_reset/awss_dev_reset.o
+CC build/esp32/esp_err_to_name.o
+CC build/bootloader/bootloader_support/src/bootloader_common.o
+AR build/esp_ringbuf/libesp_ringbuf.a
+CC build/esp_http_server/src/httpd_uri.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_adapter.o
+CC build/driver/sdmmc_host.o
+CC build/esp32/esp_himem.o
+CC build/coap/port/coap_io_socket.o
+CC build/bootloader/bootloader_support/src/bootloader_flash.o
+AR build/esp_websocket_client/libesp_websocket_client.a
+CC build/espcoredump/src/core_dump_common.o
+CC build/ethernet/emac_dev.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_api.o
+CC build/bootloader/bootloader_support/src/bootloader_flash_config.o
+CC build/esp32/esp_timer.o
+CC build/driver/sdmmc_transaction.o
+CC build/esp_http_server/src/util/ctrl_sock.o
+CC build/espcoredump/src/core_dump_flash.o
+AR build/coap/libcoap.a
+CC build/bootloader/bootloader_support/src/bootloader_init.o
+CC build/ethernet/emac_main.o
+CC build/expat/expat/expat/lib/xmlparse.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_base64.o
+CC build/bootloader/bootloader_support/src/bootloader_random.o
+CC build/esp32/esp_timer_esp32.o
+CC build/espcoredump/src/core_dump_port.o
+CC build/driver/sdspi_host.o
+AR build/esp_http_server/libesp_http_server.a
+CC build/bootloader/bootloader_support/src/bootloader_sha.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_client.o
+CC build/factory_restore/factory_restore.o
+CC build/bootloader/bootloader_support/src/bootloader_utility.o
+CC build/esp32/ets_timer_legacy.o
+CC build/ethernet/eth_phy/phy_common.o
+CC build/espcoredump/src/core_dump_uart.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_coap.o
+CC build/bootloader/bootloader_support/src/esp_image_format.o
+AR build/expat/libexpat.a
+CC build/driver/sdspi_transaction.o
+CC build/esp32/event_default_handlers.o
+CC build/ethernet/eth_phy/phy_ip101.o
+AR build/factory_restore/libfactory_restore.a
+AR build/espcoredump/libespcoredump.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_localsetup.o
+CC build/bootloader/bootloader_support/src/flash_encrypt.o
+CC build/fatfs/src/diskio.o
+CC build/driver/sigmadelta.o
+CC build/freemodbus/modbus/mb.o
+CC build/ethernet/eth_phy/phy_lan8720.o
+CC build/freertos/croutine.o
+CC build/bootloader/bootloader_support/src/flash_partitions.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_mqtt.o
+CC build/esp32/event_loop.o
+CC build/bootloader/bootloader_support/src/flash_qio_mode.o
+CC build/ethernet/eth_phy/phy_tlk110.o
+CC build/driver/spi_common.o
+CC build/fatfs/src/diskio_rawflash.o
+CC build/freertos/event_groups.o
+CC build/bootloader/bootloader_support/src/secure_boot.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/alcs_server.o
+CC build/freemodbus/port/portevent.o
+AR build/ethernet/libethernet.a
+CC build/esp32/fast_crypto_ops.o
+CC build/bootloader/bootloader_support/src/secure_boot_signatures.o
+CC build/fatfs/src/diskio_sdmmc.o
+CC build/freertos/FreeRTOS-openocd.o
+CC build/heap/heap_caps_init.o
+AR build/bootloader/bootloader_support/libbootloader_support.a
+CC build/driver/spi_master.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_api.o
+CC build/freemodbus/port/portother.o
+CC build/esp32/freertos_hooks.o
+CC build/bootloader/log/log.o
+CC build/freertos/list.o
+CC build/fatfs/src/diskio_wl.o
+AR build/bootloader/log/liblog.a
+CC build/heap/heap_caps.o
+CC build/esp32/gdbstub.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_client.o
+CC build/freemodbus/port/portserial.o
+CC build/bootloader/spi_flash/spi_flash_rom_patch.o
+CC build/driver/spi_slave.o
+CC build/freertos/port.o
+CC build/fatfs/src/ff.o
+AR build/bootloader/spi_flash/libspi_flash.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_client_adapter.o
+CC build/esp32/hw_random.o
+CC build/heap/multi_heap.o
+CC build/bootloader/soc/esp32/cpu_util.o
+CC build/freemodbus/port/porttimer.o
+CC build/freertos/queue.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_cota.o
+CC build/bootloader/soc/esp32/rtc_clk.o
+CC build/esp32/int_wdt.o
+CC build/driver/timer.o
+CC build/fatfs/src/ffsystem.o
+CC build/heap/heap_trace.o
+CC build/bootloader/soc/esp32/rtc_clk_init.o
+CC build/freemodbus/modbus/ascii/mbascii.o
+CC build/esp32/intr_alloc.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_fota.o
+CC build/freertos/tasks.o
+CC build/driver/uart.o
+CC build/bootloader/soc/esp32/rtc_init.o
+CC build/fatfs/src/ffunicode.o
+AR build/heap/libheap.a
+CC build/freemodbus/modbus/functions/mbfunccoils.o
+CC build/bootloader/soc/esp32/rtc_sleep.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_ipc.o
+CC build/esp32/ipc.o
+CC build/bootloader/soc/esp32/rtc_time.o
+CC build/fatfs/src/vfs_fat.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_log_report.o
+CC build/libsodium/port/randombytes_esp32.o
+CC build/freemodbus/modbus/functions/mbfuncdisc.o
+CC build/freertos/timers.o
+CC build/bootloader/soc/src//memory_layout_utils.o
+AR build/driver/libdriver.a
+CC build/esp32/lib_printf.o
+AR build/bootloader/soc/libsoc.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_manager.o
+CC build/lightbulb/lightbulb.o
+CC build/fatfs/src/vfs_fat_sdmmc.o
+CC build/bootloader/main/bootloader_start.o
+CC build/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/blake2b-ref.o
+CC build/esp32/panic.o
+CC build/freertos/xtensa_init.o
+CC build/freemodbus/modbus/functions/mbfuncholding.o
+AR build/bootloader/main/libmain.a
+AR build/lightbulb/liblightbulb.a
+CC build/bootloader/efuse/esp32/esp_efuse_table.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_message.o
+CC build/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/generichash_blake2b.o
+CC build/freertos/xtensa_intr.o
+CC build/linkkit_handle/linkkit_solo.o
+CC build/bootloader/efuse/src/esp_efuse_api.o
+CC build/fatfs/src/vfs_fat_spiflash.o
+CC build/esp32/phy_init.o
+CC build/freemodbus/modbus/functions/mbfuncinput.o
+CC build/libsodium/libsodium/src/libsodium/crypto_secretbox/crypto_secretbox_easy.o
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c: In function 'user_service_request_event_handler':
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:228:53: warning: unused variable 'item_from_cloud' [-Wunused-variable]
+     cJSON *root = NULL, *item_transparency = NULL, *item_from_cloud = NULL;
+                                                     ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:228:26: warning: unused variable 'item_transparency' [-Wunused-variable]
+     cJSON *root = NULL, *item_transparency = NULL, *item_from_cloud = NULL;
+                          ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:227:28: warning: unused variable 'to_cloud' [-Wunused-variable]
+     int contrastratio = 0, to_cloud = 0;
+                            ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:227:9: warning: unused variable 'contrastratio' [-Wunused-variable]
+     int contrastratio = 0, to_cloud = 0;
+         ^
+In file included from D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:18:0:
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c: In function 'linkkit_thread':
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:504:43: warning: passing argument 1 of 'iotx_register_for_ITE_PERMIT_JOIN' from incompatible pointer type [-Wincompatible-pointer-types]
+     IOT_RegisterCallback(ITE_PERMIT_JOIN, user_permit_join_event_handler);
+                                           ^
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/iotkit-embedded/infra/infra_compat.h:119:73: note: in definition of macro 'IOT_RegisterCallback'
+ #define IOT_RegisterCallback(evt, cb)           iotx_register_for_##evt(cb);
+                                                                         ^
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/iotkit-embedded/infra/infra_compat.h:120:65: note: expected 'int (*)(const char *, const int)' but argument is of type 'int (*)(const int,  const int,  const int,  const char *, const int)'
+ #define DECLARE_EVENT_CALLBACK(evt, cb)         DLL_IOT_API int iotx_register_for_##evt(cb);
+                                                                 ^
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/iotkit-embedded/infra/infra_compat.h:140:1: note: in expansion of macro 'DECLARE_EVENT_CALLBACK'
+ DECLARE_EVENT_CALLBACK(ITE_PERMIT_JOIN,          int (*cb)(const char *, const int))
+ ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c: At top level:
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:420:13: warning: 'user_post_property' defined but not used [-Wunused-function]
+ static void user_post_property(void)
+             ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:434:13: warning: 'user_post_event' defined but not used [-Wunused-function]
+ static void user_post_event(void)
+             ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:445:13: warning: 'user_deviceinfo_update' defined but not used [-Wunused-function]
+ static void user_deviceinfo_update(void)
+             ^
+D:/Git/esp32-aliyun-demo/examples/living_platform/led_strip/components/linkkit_handle/linkkit_solo.c:455:13: warning: 'user_deviceinfo_delete' defined but not used [-Wunused-function]
+ static void user_deviceinfo_delete(void)
+             ^
+CC build/bootloader/efuse/src/esp_efuse_fields.o
+CC build/freertos/xtensa_overlay_os_hook.o
+AR build/linkkit_handle/liblinkkit_handle.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_message_cache.o
+CC build/bootloader/efuse/src/esp_efuse_utility.o
+CC build/log/log.o
+CC build/libsodium/libsodium/src/libsodium/randombytes/randombytes.o
+AR build/fatfs/libfatfs.a
+CC build/freemodbus/modbus/functions/mbfuncother.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_msg_process.o
+AS build/freertos/portasm.o
+CC build/esp32/pm_esp32.o
+AR build/bootloader/efuse/libefuse.a
+CC build/libsodium/libsodium/src/libsodium/sodium/utils.o
+AS build/freertos/xtensa_context.o
+CC build/lwip/apps/dhcpserver/dhcpserver.o
+AR build/log/liblog.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_opt.o
+AS build/freertos/xtensa_intr_asm.o
+CC build/freemodbus/modbus/functions/mbutils.o
+LD build/bootloader/bootloader.elf
+CC build/main/app_main.o
+CC build/libsodium/port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o
+CC build/esp32/pm_locks.o
+AS build/freertos/xtensa_vector_defaults.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_ota.o
+CC build/libsodium/port/crypto_hash_mbedtls/crypto_hash_sha512_mbedtls.o
+esptool.py v2.8
+AS build/freertos/xtensa_vectors.o
+CC build/esp32/pm_trace.o
+CC build/lwip/apps/ping/esp_ping.o
+CC build/freemodbus/modbus/rtu/mbcrc.o
+AR build/main/libmain.a
+CC build/mbedtls/mbedtls/library/aes.o
+AR build/libsodium/liblibsodium.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_server.o
+AR build/freertos/libfreertos.a
+CC build/esp32/reset_reason.o
+CC build/mdns/mdns.o
+CC build/lwip/apps/ping/ping.o
+CC build/freemodbus/modbus/rtu/mbrtu.o
+CC build/mbedtls/mbedtls/library/aesni.o
+CC build/mqtt/esp-mqtt/mqtt_client.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_server_adapter.o
+CC build/newlib/locks.o
+CC build/esp32/restore.o
+CC build/mbedtls/mbedtls/library/arc4.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_shadow.o
+CC build/newlib/poll.o
+CC build/mbedtls/mbedtls/library/aria.o
+CC build/lwip/apps/sntp/sntp.o
+CC build/freemodbus/modbus_controller/mbcontroller.o
+CC build/esp32/sleep_modes.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_tsl_alink.o
+CC build/mbedtls/mbedtls/library/asn1parse.o
+CC build/newlib/pthread.o
+CC build/mqtt/esp-mqtt/lib/mqtt_msg.o
+CC build/lwip/lwip/src/api/api_lib.o
+CC build/newlib/random.o
+CC build/mdns/mdns_console.o
+AR build/freemodbus/libfreemodbus.a
+CC build/mbedtls/mbedtls/library/asn1write.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/dm_utils.o
+CC build/esp32/spiram.o
+CC build/newlib/reent_init.o
+CC build/nghttp/nghttp2/lib/nghttp2_frame.o
+CC build/lwip/lwip/src/api/api_msg.o
+CC build/newlib/select.o
+CC build/mqtt/esp-mqtt/lib/mqtt_outbox.o
+CC build/mbedtls/mbedtls/library/base64.o
+CC build/esp32/spiram_psram.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/impl_gateway.o
+CC build/mdns/mdns_networking.o
+CC build/nghttp/nghttp2/lib/nghttp2_hd.o
+CC build/newlib/syscall_table.o
+CC build/mbedtls/mbedtls/library/bignum.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/impl_linkkit.o
+CC build/esp32/stack_check.o
+CC build/mqtt/esp-mqtt/lib/platform_esp32_idf.o
+CC build/lwip/lwip/src/api/err.o
+CC build/newlib/syscalls.o
+CC build/nghttp/nghttp2/lib/nghttp2_hd_huffman.o
+CC build/esp32/system_api.o
+AR build/mdns/libmdns.a
+CC build/esp-aliyun/iotkit-embedded/dev_model/impl_ntp.o
+CC build/mbedtls/mbedtls/library/blowfish.o
+CC build/newlib/termios.o
+AR build/mqtt/libmqtt.a
+CC build/nghttp/nghttp2/lib/nghttp2_helper.o
+CC build/lwip/lwip/src/api/netbuf.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/impl_solo.o
+CC build/mbedtls/mbedtls/library/camellia.o
+CXX build/nvs_flash/src/nvs_api.o
+CC build/openssl/library/ssl_cert.o
+CC build/newlib/time.o
+CC build/esp32/task_wdt.o
+CC build/nghttp/nghttp2/lib/nghttp2_http.o
+CC build/mbedtls/mbedtls/library/ccm.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/iotx_cm.o
+CC build/openssl/library/ssl_lib.o
+CC build/lwip/lwip/src/api/netdb.o
+CC build/newlib/utime.o
+CC build/nghttp/nghttp2/lib/nghttp2_outbound_item.o
+CC build/esp32/wifi_init.o
+CC build/mbedtls/mbedtls/library/certs.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/iotx_cm_coap.o
+CC build/openssl/library/ssl_methods.o
+CC build/lwip/lwip/src/api/netifapi.o
+AR build/newlib/libnewlib.a
+CC build/nghttp/nghttp2/lib/nghttp2_pq.o
+CC build/esp-aliyun/iotkit-embedded/dev_model/iotx_cm_mqtt.o
+CC build/mbedtls/mbedtls/library/chacha20.o
+CC build/openssl/library/ssl_pkey.o
+CC build/protobuf-c/protobuf-c/protobuf-c/protobuf-c.o
+CC build/esp32/hwcrypto/aes.o
+CC build/nghttp/nghttp2/lib/nghttp2_queue.o
+CC build/mbedtls/mbedtls/library/chachapoly.o
+CC build/esp-aliyun/iotkit-embedded/dev_reset/dev_reset.o
+CXX build/nvs_flash/src/nvs_encr.o
+CC build/lwip/lwip/src/api/sockets.o
+CC build/openssl/library/ssl_stack.o
+CC build/mbedtls/mbedtls/library/cipher.o
+CC build/nghttp/nghttp2/lib/nghttp2_rcbuf.o
+CC build/esp32/hwcrypto/sha.o
+CC build/esp-aliyun/iotkit-embedded/dev_sign/dev_sign_mqtt.o
+AR build/protobuf-c/libprotobuf-c.a
+CC build/openssl/library/ssl_x509.o
+CC build/nghttp/nghttp2/lib/nghttp2_session.o
+CC build/mbedtls/mbedtls/library/cipher_wrap.o
+CC build/protocomm/src/common/protocomm.o
+CC build/esp-aliyun/iotkit-embedded/dynamic_register/dynreg.o
+AS build/esp32/dport_panic_highint_hdl.o
+CC build/openssl/platform/ssl_pm.o
+CC build/lwip/lwip/src/api/tcpip.o
+CC build/mbedtls/mbedtls/library/cmac.o
+AR build/esp32/libesp32.a
+CC build/protocomm/src/security/security0.o
+CXX build/nvs_flash/src/nvs_item_hash_list.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_cjson.o
+CC build/openssl/platform/ssl_port.o
+CC build/mbedtls/mbedtls/library/ctr_drbg.o
+CC build/pthread/pthread.o
+CC build/lwip/lwip/src/apps/sntp/sntp.o
+CC build/protocomm/src/security/security1.o
+AR build/openssl/libopenssl.a
+CC build/nghttp/nghttp2/lib/nghttp2_stream.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_compat.o
+CC build/mbedtls/mbedtls/library/debug.o
+CC build/sdmmc/sdmmc_cmd.o
+CC build/pthread/pthread_cond_var.o
+CC build/mbedtls/mbedtls/library/des.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_defs.o
+CC build/nghttp/nghttp2/lib/nghttp2_submit.o
+CC build/protocomm/proto-c/constants.pb-c.o
+CC build/lwip/lwip/src/core/def.o
+CXX build/nvs_flash/src/nvs_ops.o
+CC build/mbedtls/mbedtls/library/dhm.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_httpc.o
+CC build/sdmmc/sdmmc_common.o
+CC build/protocomm/proto-c/sec0.pb-c.o
+CC build/nghttp/port/http_parser.o
+CXX build/nvs_flash/src/nvs_page.o
+CC build/pthread/pthread_local_storage.o
+CC build/lwip/lwip/src/core/dns.o
+CC build/mbedtls/mbedtls/library/ecdh.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_json_parser.o
+CC build/protocomm/proto-c/sec1.pb-c.o
+CC build/sdmmc/sdmmc_init.o
+AR build/nghttp/libnghttp.a
+AR build/pthread/libpthread.a
+CC build/protocomm/proto-c/session.pb-c.o
+CC build/mbedtls/mbedtls/library/ecdsa.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_log.o
+CC build/smartconfig_ack/smartconfig_ack.o
+CC build/soc/esp32/cpu_util.o
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/iotkit-embedded/infra/infra_log.c: In function 'LITE_set_loglevel':
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/iotkit-embedded/infra/infra_log.c:90:12: warning: unused variable 'mutex' [-Wunused-variable]
+     void **mutex = NULL;
+            ^
+CC build/lwip/lwip/src/core/inet_chksum.o
+CC build/sdmmc/sdmmc_io.o
+CC build/protocomm/src/transports/protocomm_console.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_md5.o
+CC build/mbedtls/mbedtls/library/ecjpake.o
+CC build/soc/esp32/gpio_periph.o
+CXX build/nvs_flash/src/nvs_storage.o
+CC build/mbedtls/mbedtls/library/ecp.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_net.o
+CC build/soc/esp32/rtc_clk.o
+AR build/smartconfig_ack/libsmartconfig_ack.a
+CC build/sdmmc/sdmmc_mmc.o
+CC build/lwip/lwip/src/core/init.o
+CC build/protocomm/src/transports/protocomm_httpd.o
+CC build/spi_flash/cache_utils.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_prt_nwk_payload.o
+CC build/soc/esp32/rtc_clk_init.o
+CC build/mbedtls/mbedtls/library/ecp_curves.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_report.o
+CC build/sdmmc/sdmmc_sd.o
+AR build/protocomm/libprotocomm.a
+CC build/lwip/lwip/src/core/ip.o
+CC build/spi_flash/flash_mmap.o
+CC build/soc/esp32/rtc_init.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_sha1.o
+CC build/spiffs/esp_spiffs.o
+CC build/mbedtls/mbedtls/library/entropy.o
+AR build/sdmmc/libsdmmc.a
+CC build/soc/esp32/rtc_periph.o
+AR build/nvs_flash/libnvs_flash.a
+CC build/lwip/lwip/src/core/mem.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_sha256.o
+CC build/spi_flash/flash_ops.o
+CC build/tcp_transport/transport.o
+CC build/mbedtls/mbedtls/library/entropy_poll.o
+CC build/soc/esp32/rtc_pm.o
+CC build/spiffs/spiffs_api.o
+CC build/tcpip_adapter/tcpip_adapter_lwip.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_string.o
+CC build/mbedtls/mbedtls/library/error.o
+CC build/tcp_transport/transport_ssl.o
+CC build/soc/esp32/rtc_sleep.o
+CC build/lwip/lwip/src/core/memp.o
+CC build/spi_flash/partition.o
+CC build/esp-aliyun/iotkit-embedded/infra/infra_timer.o
+CC build/mbedtls/mbedtls/library/gcm.o
+CC build/spiffs/spiffs/src/spiffs_cache.o
+CC build/soc/esp32/rtc_time.o
+CC build/esp-aliyun/iotkit-embedded/mqtt/iotx_mqtt_client.o
+CC build/spi_flash/spi_flash_rom_patch.o
+CC build/lwip/lwip/src/core/netif.o
+CC build/soc/esp32/rtc_wdt.o
+CC build/tcp_transport/transport_tcp.o
+AR build/tcpip_adapter/libtcpip_adapter.a
+CC build/mbedtls/mbedtls/library/havege.o
+CC build/spiffs/spiffs/src/spiffs_check.o
+AR build/spi_flash/libspi_flash.a
+CC build/ulp/ulp.o
+CC build/mbedtls/mbedtls/library/hkdf.o
+CC build/soc/esp32/sdio_slave_periph.o
+CC build/esp-aliyun/iotkit-embedded/mqtt/mqtt_api.o
+CC build/unity/unity/src/unity.o
+CC build/lwip/lwip/src/core/pbuf.o
+CC build/spiffs/spiffs/src/spiffs_gc.o
+CC build/mbedtls/mbedtls/library/hmac_drbg.o
+CC build/soc/esp32/sdmmc_periph.o
+CC build/ulp/ulp_macro.o
+CC build/tcp_transport/transport_utils.o
+CC build/esp-aliyun/iotkit-embedded/ota/iotx_ota.o
+CC build/unity/unity_port_esp32.o
+CC build/soc/esp32/soc_memory_layout.o
+CC build/spiffs/spiffs/src/spiffs_hydrogen.o
+CC build/tcp_transport/transport_ws.o
+CC build/mbedtls/mbedtls/library/md.o
+AR build/ulp/libulp.a
+CC build/lwip/lwip/src/core/raw.o
+CC build/soc/esp32/spi_periph.o
+CC build/esp-aliyun/iotkit-embedded/ota/ota_fetch.o
+CC build/vfs/vfs.o
+CC build/unity/unity_runner.o
+CC build/mbedtls/mbedtls/library/md_wrap.o
+AR build/tcp_transport/libtcp_transport.a
+CC build/spiffs/spiffs/src/spiffs_nucleus.o
+CC build/soc/src//memory_layout_utils.o
+CC build/esp-aliyun/iotkit-embedded/ota/ota_lib.o
+CXX build/wear_levelling/Partition.o
+AR build/unity/libunity.a
+CC build/mbedtls/mbedtls/library/md2.o
+CC build/lwip/lwip/src/core/stats.o
+AR build/soc/libsoc.a
+CC build/wifi_provisioning/src/handlers.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/dev_ap/awss_dev_ap.o
+CC build/mbedtls/mbedtls/library/md4.o
+CXX build/wear_levelling/SPI_Flash.o
+CC build/vfs/vfs_uart.o
+AR build/spiffs/libspiffs.a
+CC build/wpa_supplicant/src/crypto/aes-cbc.o
+CC build/lwip/lwip/src/core/sys.o
+CC build/mbedtls/mbedtls/library/md5.o
+CXX build/wear_levelling/wear_levelling.o
+CC build/ws2812/ws2812_control.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/awss.o
+CC build/wpa_supplicant/src/crypto/aes-internal.o
+CC build/wifi_provisioning/src/manager.o
+CC build/mbedtls/mbedtls/library/memory_buffer_alloc.o
+AR build/vfs/libvfs.a
+CC build/lwip/lwip/src/core/tcp.o
+CXX build/wear_levelling/WL_Ext_Perf.o
+CC build/wpa_supplicant/src/crypto/aes-internal-dec.o
+AR build/ws2812/libws2812.a
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/awss_main.o
+CC build/mbedtls/mbedtls/library/nist_kw.o
+CC build/xtensa-debug-module/trax.o
+Building partitions from /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip/partitions_esp32.csv...
+CC build/mbedtls/mbedtls/library/oid.o
+CXX build/wear_levelling/WL_Ext_Safe.o
+CC build/wpa_supplicant/src/crypto/aes-internal-enc.o
+AR build/xtensa-debug-module/libxtensa-debug-module.a
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/zconfig_protocol.o
+CC build/wifi_provisioning/src/scheme_console.o
+CC build/lwip/lwip/src/core/tcp_in.o
+CC build/wpa_supplicant/src/crypto/aes-unwrap.o
+CC build/mbedtls/mbedtls/library/padlock.o
+CXX build/wear_levelling/WL_Flash.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/zconfig_vendor_common.o
+CC build/wifi_provisioning/src/scheme_softap.o
+CC build/mbedtls/mbedtls/library/pem.o
+CC build/wpa_supplicant/src/crypto/aes-wrap.o
+CC build/wifi_provisioning/src/wifi_config.o
+AR build/wear_levelling/libwear_levelling.a
+CC build/wifi_provisioning/src/wifi_scan.o
+CC build/lwip/lwip/src/core/tcp_out.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/aplist/awss_aplist.o
+CC build/mbedtls/mbedtls/library/pk.o
+CC build/wpa_supplicant/src/crypto/bignum.o
+CC build/wifi_provisioning/proto-c/wifi_config.pb-c.o
+CC build/wifi_provisioning/proto-c/wifi_constants.pb-c.o
+CC build/wifi_provisioning/proto-c/wifi_scan.pb-c.o
+CC build/mbedtls/mbedtls/library/pk_wrap.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/ieee80211/zconfig_ieee80211.o
+CC build/mbedtls/mbedtls/library/pkcs11.o
+CC build/wpa_supplicant/src/crypto/crypto_internal.o
+CC build/mbedtls/mbedtls/library/pkcs12.o
+CC build/lwip/lwip/src/core/timeouts.o
+AR build/wifi_provisioning/libwifi_provisioning.a
+CC build/mbedtls/mbedtls/library/pkcs5.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/statics/awss_statis.o
+CC build/mbedtls/mbedtls/library/pkparse.o
+CC build/mbedtls/mbedtls/library/pkwrite.o
+CC build/wpa_supplicant/src/crypto/crypto_internal-cipher.o
+CC build/mbedtls/mbedtls/library/platform.o
+CC build/mbedtls/mbedtls/library/platform_util.o
+Generating libapp_trace.a.sections_info
+Generating libapp_update.a.sections_info
+CC build/mbedtls/mbedtls/library/poly1305.o
+CC build/mbedtls/mbedtls/library/ripemd160.o
+Generating libasio.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/utils/awss_crypt.o
+CC build/wpa_supplicant/src/crypto/crypto_internal-modexp.o
+CC build/lwip/lwip/src/core/udp.o
+CC build/mbedtls/mbedtls/library/rsa.o
+CC build/mbedtls/mbedtls/library/rsa_internal.o
+Generating libbootloader_support.a.sections_info
+Generating libbt.a.sections_info
+CC build/mbedtls/mbedtls/library/sha1.o
+Generating libcoap.a.sections_info
+CC build/mbedtls/mbedtls/library/sha256.o
+CC build/wpa_supplicant/src/crypto/crypto_internal-rsa.o
+Generating libconsole.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/frameworks/utils/zconfig_utils.o
+CC build/mbedtls/mbedtls/library/sha512.o
+Generating libcxx.a.sections_info
+CC build/lwip/lwip/src/core/ipv4/autoip.o
+Generating libdriver.a.sections_info
+CC build/mbedtls/mbedtls/library/ssl_cache.o
+CC build/mbedtls/mbedtls/library/ssl_ciphersuites.o
+CC build/wpa_supplicant/src/crypto/crypto_mbedtls.o
+CC build/mbedtls/mbedtls/library/ssl_cli.o
+Generating libefuse.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/p2p/awss_wps.o
+CC build/mbedtls/mbedtls/library/ssl_cookie.o
+Generating libesp-tls.a.sections_info
+Generating libesp32.a.sections_info
+Generating libesp_adc_cal.a.sections_info
+CC build/mbedtls/mbedtls/library/ssl_srv.o
+CC build/wpa_supplicant/src/crypto/des-internal.o
+Generating libesp_event.a.sections_info
+CC build/lwip/lwip/src/core/ipv4/dhcp.o
+Generating libesp_http_client.a.sections_info
+CC build/mbedtls/mbedtls/library/ssl_ticket.o
+CC build/wpa_supplicant/src/crypto/dh_group5.o
+CC build/mbedtls/mbedtls/library/ssl_tls.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/phone_ap/awss_aha.o
+Generating libesp_http_server.a.sections_info
+Generating libesp_https_ota.a.sections_info
+CC build/wpa_supplicant/src/crypto/dh_groups.o
+CC build/mbedtls/mbedtls/library/threading.o
+Generating libesp_https_server.a.sections_info
+CC build/wpa_supplicant/src/crypto/md4-internal.o
+CC build/wpa_supplicant/src/crypto/md5.o
+Generating libesp_ringbuf.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/phone_ap/awss_wifimgr.o
+Generating libesp_websocket_client.a.sections_info
+CC build/mbedtls/mbedtls/library/timing.o
+CC build/wpa_supplicant/src/crypto/md5-internal.o
+CC build/lwip/lwip/src/core/ipv4/etharp.o
+Generating libespcoredump.a.sections_info
+CC build/wpa_supplicant/src/crypto/ms_funcs.o
+CC build/wpa_supplicant/src/crypto/rc4.o
+Generating libethernet.a.sections_info
+CC build/mbedtls/mbedtls/library/version.o
+Generating libexpat.a.sections_info
+CC build/mbedtls/mbedtls/library/version_features.o
+CC build/wpa_supplicant/src/crypto/sha1.o
+Generating libfactory_restore.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/router_ap/awss_adha.o
+Generating libfatfs.a.sections_info
+CC build/wpa_supplicant/src/crypto/sha1-internal.o
+CC build/mbedtls/mbedtls/library/x509.o
+CC build/mbedtls/mbedtls/library/x509_create.o
+CC build/mbedtls/mbedtls/library/x509_crl.o
+Generating libfreemodbus.a.sections_info
+CC build/lwip/lwip/src/core/ipv4/icmp.o
+Generating libfreertos.a.sections_info
+CC build/wpa_supplicant/src/crypto/sha1-pbkdf2.o
+Generating libheap.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/smartconfig/awss_smartconfig.o
+Generating liblibsodium.a.sections_info
+CC build/wpa_supplicant/src/crypto/sha256.o
+CC build/wpa_supplicant/src/crypto/sha256-internal.o
+CC build/mbedtls/mbedtls/library/x509_crt.o
+CC build/mbedtls/mbedtls/library/x509_csr.o
+CC build/wpa_supplicant/port/os_xtensa.o
+Generating liblightbulb.a.sections_info
+Generating liblinkkit_handle.a.sections_info
+CC build/lwip/lwip/src/core/ipv4/igmp.o
+Generating liblog.a.sections_info
+CC build/wpa_supplicant/src/fast_crypto/fast_aes-cbc.o
+CC build/wpa_supplicant/src/fast_crypto/fast_aes-unwrap.o
+Generating libmain.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/zero_config/awss_enrollee.o
+CC build/mbedtls/mbedtls/library/x509write_crt.o
+CC build/wpa_supplicant/src/fast_crypto/fast_aes-wrap.o
+Generating libmdns.a.sections_info
+CC build/mbedtls/mbedtls/library/x509write_csr.o
+Generating libmqtt.a.sections_info
+Generating libnewlib.a.sections_info
+CC build/wpa_supplicant/src/fast_crypto/fast_crypto_internal.o
+CC build/wpa_supplicant/src/fast_crypto/fast_crypto_internal-cipher.o
+Generating libnghttp.a.sections_info
+CC build/lwip/lwip/src/core/ipv4/ip4.o
+CC build/mbedtls/mbedtls/library/xtea.o
+CC build/wpa_supplicant/src/fast_crypto/fast_crypto_internal-modexp.o
+CC build/esp-aliyun/iotkit-embedded/wifi_provision/zero_config/awss_registrar.o
+CC build/mbedtls/port/esp_bignum.o
+Generating libnvs_flash.a.sections_info
+Generating libopenssl.a.sections_info
+CC build/wpa_supplicant/src/fast_crypto/fast_sha256.o
+CC build/wpa_supplicant/src/fast_crypto/fast_sha256-internal.o
+CC build/mbedtls/port/esp_hardware.o
+Generating libprotobuf-c.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap.o
+Generating libprotocomm.a.sections_info
+Generating libpthread.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/coap_server/CoAPPacket/CoAPDeserialize_common.o
+Generating libsdmmc.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_common.o
+CC build/mbedtls/port/esp_mem.o
+CC build/lwip/lwip/src/core/ipv4/ip4_addr.o
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_mschapv2.o
+CC build/mbedtls/port/esp_sha1.o
+Generating libsmartconfig_ack.a.sections_info
+Generating libsoc.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_peap.o
+CC build/mbedtls/port/esp_sha256.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/CoAPPacket/CoAPMessage_common.o
+Generating libspi_flash.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_peap_common.o
+CC build/mbedtls/port/esp_sha512.o
+Generating libspiffs.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_tls.o
+Generating libtcp_transport.a.sections_info
+CC build/mbedtls/port/mbedtls_debug.o
+CC build/lwip/lwip/src/core/ipv4/ip4_frag.o
+Generating libtcpip_adapter.a.sections_info
+CC build/mbedtls/port/net_sockets.o
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_tls_common.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/CoAPPacket/CoAPSerialize_common.o
+Generating libulp.a.sections_info
+CC build/wpa_supplicant/src/wpa2/eap_peer/eap_ttls.o
+CC build/wpa_supplicant/src/wpa2/eap_peer/mschapv2.o
+Generating libunity.a.sections_info
+CC build/lwip/lwip/src/core/ipv6/dhcp6.o
+Generating libvfs.a.sections_info
+Generating libwear_levelling.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPExport.o
+CC build/lwip/lwip/src/core/ipv6/ethip6.o
+CC build/lwip/lwip/src/core/ipv6/icmp6.o
+CC build/wpa_supplicant/src/wpa2/tls/asn1.o
+Generating libwifi_provisioning.a.sections_info
+CC build/wpa_supplicant/src/wpa2/tls/bignum.o
+AR build/mbedtls/libmbedtls.a
+Generating libws2812.a.sections_info
+CC build/lwip/lwip/src/core/ipv6/inet6.o
+Generating libxtensa-debug-module.a.sections_info
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPMessage.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPNetwork.o
+CC build/wpa_supplicant/src/wpa2/tls/pkcs1.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPObserve.o
+CC build/lwip/lwip/src/core/ipv6/ip6.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPResource.o
+CC build/wpa_supplicant/src/wpa2/tls/pkcs5.o
+CC build/esp-aliyun/iotkit-embedded/coap_server/server/CoAPServer.o
+CC build/lwip/lwip/src/core/ipv6/ip6_addr.o
+CC build/esp-aliyun/wrappers/wrapper_awss.o
+CC build/wpa_supplicant/src/wpa2/tls/pkcs8.o
+CC build/esp-aliyun/wrappers/wrapper_crypto.o
+CC build/wpa_supplicant/src/wpa2/tls/rsa.o
+CC build/lwip/lwip/src/core/ipv6/ip6_frag.o
+CC build/esp-aliyun/wrappers/wrapper_kv.o
+CC build/wpa_supplicant/src/wpa2/tls/tls_internal.o
+CC build/lwip/lwip/src/core/ipv6/mld6.o
+CC build/lwip/lwip/src/core/ipv6/nd6.o
+CC build/esp-aliyun/wrappers/wrapper_os.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_client.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_client_read.o
+CC build/lwip/lwip/src/netif/ethernet.o
+CC build/esp-aliyun/wrappers/wrapper_ota.o
+CC build/esp-aliyun/wrappers/wrapper_product.o
+CC build/lwip/lwip/src/netif/ethernetif.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_client_write.o
+D:/Git/esp32-aliyun-demo/components/esp-aliyun/wrappers/wrapper_os.c:36:20: warning: 'TAG' defined but not used [-Wunused-variable]
+ static const char *TAG = "os";
+                    ^
+CC build/esp-aliyun/wrappers/wrapper_system.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_common.o
+CC build/lwip/lwip/src/netif/lowpan6.o
+CC build/esp-aliyun/wrappers/wrapper_tcp.o
+CC build/lwip/lwip/src/netif/slipif.o
+CC build/lwip/port/esp32/vfs_lwip.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_cred.o
+CC build/lwip/port/esp32/freertos/sys_arch.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_record.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_server.o
+CC build/lwip/port/esp32/netif/dhcp_state.o
+CC build/lwip/port/esp32/netif/ethernetif.o
+CC build/esp-aliyun/wrappers/wrapper_tls.o
+CC build/lwip/port/esp32/netif/wlanif.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_server_read.o
+CC build/lwip/port/esp32/debug/lwip_debug.o
+CC build/esp-aliyun/wrappers/wrapper_udp.o
+CC build/wpa_supplicant/src/wpa2/tls/tlsv1_server_write.o
+CC build/esp-aliyun/wrappers/wrapper_wifi.o
+CC build/wpa_supplicant/src/wpa2/tls/x509v3.o
+CC build/wpa_supplicant/src/wpa2/utils/base64.o
+CC build/wpa_supplicant/src/wpa2/utils/ext_password.o
+CC build/wpa_supplicant/src/wps/eap_common.o
+AR build/lwip/liblwip.a
+CC build/wpa_supplicant/src/wps/uuid.o
+
+CC build/wpa_supplicant/src/wps/wps.o
+CC build/wpa_supplicant/src/wps/wps_attr_build.o
+CC build/wpa_supplicant/src/wps/wps_attr_parse.o
+Generating liblwip.a.sections_info
+CC build/wpa_supplicant/src/wps/wps_attr_process.o
+CC build/wpa_supplicant/src/wps/wps_common.o
+AR build/esp-aliyun/libesp-aliyun.a
+CC build/wpa_supplicant/src/wps/wps_dev_attr.o
+CC build/wpa_supplicant/src/wps/wps_enrollee.o
+Generating libmbedtls.a.sections_info
+CC build/wpa_supplicant/src/wps/wps_registrar.o
+CC build/wpa_supplicant/src/wps/wps_validate.o
+Generating libesp-aliyun.a.sections_info
+AR build/wpa_supplicant/libwpa_supplicant.a
+Generating libwpa_supplicant.a.sections_info
+Generating esp32.project.ld
+LD build/led_strip.elf
+esptool.py v2.8
+Flashing binaries to serial port COM3 (app at offset 0x10000)...
+esptool.py v2.8
+Serial port COM3
+Connecting........__
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:ae:a4:1f:b0:f0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 8192 bytes to 31...
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.0 seconds (effective 6006.6 kbit/s)...
+Hash of data verified.
+Compressed 25648 bytes to 15262...
+Wrote 25648 bytes (15262 compressed) at 0x00001000 in 0.2 seconds (effective 1119.8 kbit/s)...
+Hash of data verified.
+Compressed 939616 bytes to 579284...
+Wrote 939616 bytes (579284 compressed) at 0x00010000 in 7.7 seconds (effective 977.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 139...
+Wrote 3072 bytes (139 compressed) at 0x00008000 in 0.0 seconds (effective 1884.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+MONITOR
+--- idf_monitor on COM3 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6752
+ho 0 tail 12 room 4
+load:0x40078000,len:12128
+load:0x40080400,len:6664
+entry 0x40080774
+I (76) boot: Chip Revision: 1
+I (76) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (41) boot: ESP-IDF v3.3.4-dirty 2nd stage bootloader
+I (41) boot: compile time 21:49:07
+I (41) boot: Enabling RNG early entropy source...
+I (46) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DIO
+I (54) boot: SPI Flash Size : 4MB
+I (58) boot: Partition Table:
+I (62) boot: ## Label            Usage          Type ST Offset   Length
+I (69) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (84) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (92) boot:  3 ota_0            OTA app          00 10 00010000 00100000
+I (99) boot:  4 ota_1            OTA app          00 11 00110000 00100000
+I (107) boot:  5 fctry            WiFi data        01 02 00210000 00004000
+I (114) boot: End of partition table
+I (119) boot_comm: chip revision: 1, min. application chip revision: 0
+I (126) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x2a010 (172048) map
+I (195) esp_image: segment 1: paddr=0x0003a038 vaddr=0x3ffb0000 size=0x038c8 ( 14536) load
+I (201) esp_image: segment 2: paddr=0x0003d908 vaddr=0x40080000 size=0x00400 (  1024) load
+0x40080000: _WindowOverflow4 at D:/Codes/esp-idf-v3.3.4/components/freertos/xtensa_vectors.S:1779
+
+I (202) esp_image: segment 3: paddr=0x0003dd10 vaddr=0x40080400 size=0x02300 (  8960) load
+I (215) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0xa281c (665628) map
+0x400d0018: _flash_cache_start at ??:?
+
+I (453) esp_image: segment 5: paddr=0x000e283c vaddr=0x40082700 size=0x12e00 ( 77312) load
+0x40082700: _xt_medint2 at D:/Codes/esp-idf-v3.3.4/components/freertos/xtensa_vectors.S:1211
+
+I (498) boot: Loaded app from partition at offset 0x10000
+I (498) boot: Disabling RNG early entropy source...
+I (499) cpu_start: Pro cpu up.
+I (502) cpu_start: Application information:
+I (507) cpu_start: Project name:     led_strip
+I (512) cpu_start: App version:      0c0f84b-dirty
+I (518) cpu_start: Compile time:     Mar  3 2022 21:48:42
+I (524) cpu_start: ELF file SHA256:  0d8878a3331812f8...
+I (530) cpu_start: ESP-IDF:          v3.3.4-dirty
+I (535) cpu_start: Starting app cpu, entry point is 0x40081210
+0x40081210: call_start_cpu1 at D:/Codes/esp-idf-v3.3.4/components/esp32/cpu_start.c:268
+
+I (0) cpu_start: App cpu up.
+I (546) heap_init: Initializing. RAM available for dynamic allocation:
+I (553) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (559) heap_init: At 3FFBAE18 len 000251E8 (148 KiB): DRAM
+I (565) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (571) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (578) heap_init: At 40095500 len 0000AB00 (42 KiB): IRAM
+I (584) cpu_start: Pro cpu start user code
+I (266) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (292) factory_rst: quick reboot times 2, don't need to restore
+I (312) wifi:wifi driver task: 3ffc2dac, prio:23, stack:3584, core=0
+I (312) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
+I (312) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
+I (372) wifi:wifi firmware version: 74b0970
+I (372) wifi:config NVS flash: enabled
+I (372) wifi:config nano formating: disabled
+I (372) wifi:Init dynamic tx buffer num: 32
+I (382) wifi:Init data frame dynamic rx buffer num: 32
+I (382) wifi:Init management frame dynamic rx buffer num: 32
+I (392) wifi:Init management short buffer num: 32
+I (392) wifi:Init static rx buffer size: 1600
+I (402) wifi:Init static rx buffer num: 10
+I (402) wifi:Init dynamic rx buffer num: 32
+W (412) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (562) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 2
+I (582) wifi:mode : sta (30:ae:a4:1f:b0:f0)
+[prt] log level set as: [ 4 ]
+W (582) wrapper_kv: nvs get blob ssid failed with 1102
+[crt] awss_config_press(180): enable awss
+I (592) app main: IOTX_AWSS_ENABLE
+I (592) app main: IOTX_AWSS_START
+[inf] zconfig_init(260): zconfig_init
+I (602) wifi:ic_enable_sniffer
+I (602) awss: Open monitor mode
+E (612) wrapper_product: HAL_GetProductParam nvs_open failed with 1102
+E (612) wrapper_product: HAL_GetProductParam nvs_open failed with 1102
+E (622) wrapper_product: HAL_GetProductParam nvs_open failed with 1102
+E (632) wrapper_product: HAL_GetProductParam nvs_open failed with 1102
+E (632) wrapper_product: HAL_GetProductParam nvs_open failed with 1102
+[crt] aws_switch_channel(166): chan 1
+[crt] awss_save_apinfo(271): [1] ssid:TP-LINK_2505, mac:206be7918d61, chn:1, rssi:-83, adha:0
+[crt] awss_save_apinfo(271): [2] ssid:TP-LINK_275A, mac:480eec70275a, chn:1, rssi:-71, adha:0
+[crt] awss_save_apinfo(271): [3] ssid:HUAWEI-tong, mac:bc1ae4c3ce40, chn:1, rssi:-82, adha:0
+[crt] awss_save_apinfo(271): [4] ssid:HUAWEI-tong_Wi-Fi5, mac:bc1ae4f3ce45, chn:1, rssi:-82, adha:0
+[crt] awss_save_apinfo(271): [5] ssid:YBB, mac:646e978c3744, chn:1, rssi:-91, adha:0
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] awss_save_apinfo(271): [6] ssid:, mac:3ccd5787b7b1, chn:11, rssi:-89, adha:0
+[crt] awss_save_apinfo(271): [7] ssid:TP-LINK_H, mac:50642b456e9f, chn:10, rssi:-62, adha:0
+[crt] awss_save_apinfo(271): [8] ssid:CMCC-C4Wq, mac:20968aec8b28, chn:10, rssi:-72, adha:0
+[crt] aws_switch_channel(166): chan 2
+[crt] awss_save_apinfo(271): [9] ssid:ChinaNet-kjKH, mac:247e511111f8, chn:3, rssi:-65, adha:0
+[crt] aws_switch_channel(166): chan 3
+[crt] awss_save_apinfo(271): [10] ssid:一橙不变, mac:0840f3716e31, chn:3, rssi:-73, adha:0
+[crt] awss_save_apinfo(271): [11] ssid:CU_7dd8, mac:30424072a617, chn:3, rssi:-89, adha:0
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] awss_save_apinfo(271): [12] ssid:china2501, mac:8cdef9350b2a, chn:5, rssi:-93, adha:0
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] awss_save_apinfo(271): [13] ssid:ChinaNet-snJg, mac:c4047baf9676, chn:7, rssi:-90, adha:0
+[crt] aws_switch_channel(166): chan 8
+[crt] awss_save_apinfo(271): [14] ssid:ChinaNet-tmRS, mac:7c60971a8974, chn:8, rssi:-93, adha:0
+[crt] aws_switch_channel(166): chan 9
+[crt] awss_save_apinfo(271): [15] ssid:ChinaNet-Ya7i, mac:c09fe178db80, chn:9, rssi:-89, adha:0
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] awss_save_apinfo(271): [16] ssid:ChinaNetliu, mac:5078b376cf40, chn:12, rssi:-93, adha:0
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+I (6282) factory_rst: Quick reboot timeout, clear reboot times
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 62
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] awss_save_apinfo(271): [17] ssid:FAST_E8A7, mac:9c7f8136e8a7, chn:11, rssi:-94, adha:0
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 62
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip
+$ cd "d:\Git\esp32-aliyun-demo\components\esp-aliyun\config\mass_mfg"
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/components/esp-aliyun/config/mass_mfg
+$ $IDF_PATH/components/nvs_flash/nvs_partition_generator/nvs_partition_gen.py --input myesp32ledstrip_single_mfg_config.csv --output myesp32ledstrip_single_mfg_config.bin --size 0x4000
+Version:  v2 - Multipage Blob Support Enabled
+NVS binary created: D:/Git/esp32-aliyun-demo/components/esp-aliyun/config/mass_mfg/myesp32ledstrip_single_mfg_config.bin
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/components/esp-aliyun/config/mass_mfg
+$ $IDF_PATH/components/esptool_py/esptool/esptool.py --port COM3 write_flash 0x210000 myesp32ledstrip_single_mfg_config.bin
+esptool.py v2.8
+Serial port COM3
+Connecting........_
+Detecting chip type... ESP32
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:ae:a4:1f:b0:f0
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 16384 bytes to 323...
+Wrote 16384 bytes (323 compressed) at 0x00210000 in 0.0 seconds (effective 3109.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/components/esp-aliyun/config/mass_mfg
+$ cd "d:\Git\esp32-aliyun-demo\examples\living_platform\led_strip"
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip
+$ make flash monitor -j8
+Toolchain path: /opt/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: crosstool-ng-1.22.0-96-g28523988
+Compiler version: 5.2.0
+Python requirements from D:/Codes/esp-idf-v3.3.4/requirements.txt are satisfied.
+App "led_strip" version: 0c0f84b-dirty
+
+Flashing binaries to serial port COM3 (app at offset 0x10000)...
+esptool.py v2.8
+Serial port COM3
+Connecting........__
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:ae:a4:1f:b0:f0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 8192 bytes to 31...
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.0 seconds (effective 7075.9 kbit/s)...
+Hash of data verified.
+Compressed 25648 bytes to 15262...
+Wrote 25648 bytes (15262 compressed) at 0x00001000 in 0.2 seconds (effective 1130.4 kbit/s)...
+Hash of data verified.
+Compressed 939616 bytes to 579284...
+Wrote 939616 bytes (579284 compressed) at 0x00010000 in 9.2 seconds (effective 817.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 139...
+Wrote 3072 bytes (139 compressed) at 0x00008000 in 0.0 seconds (effective 2060.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+MONITOR
+--- idf_monitor on COM3 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6752
+ho 0 tail 12 room 4
+load:0x40078000,len:12128
+load:0x40080400,len:6664
+entry 0x40080774
+I (75) boot: Chip Revision: 1
+I (76) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (41) boot: ESP-IDF v3.3.4-dirty 2nd stage bootloader
+I (41) boot: compile time 21:49:07
+I (41) boot: Enabling RNG early entropy source...
+I (46) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DIO
+I (54) boot: SPI Flash Size : 4MB
+I (58) boot: Partition Table:
+I (62) boot: ## Label            Usage          Type ST Offset   Length
+I (69) boot:  0 nvs              WiFi data        01 02 00009000 00004000
+I (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000
+I (84) boot:  2 phy_init         RF data          01 01 0000f000 00001000
+I (91) boot:  3 ota_0            OTA app          00 10 00010000 00100000
+I (99) boot:  4 ota_1            OTA app          00 11 00110000 00100000
+I (106) boot:  5 fctry            WiFi data        01 02 00210000 00004000
+I (114) boot: End of partition table
+I (118) boot: No factory image, trying OTA 0
+I (123) boot_comm: chip revision: 1, min. application chip revision: 0
+I (130) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x2a010 (172048) map
+I (200) esp_image: segment 1: paddr=0x0003a038 vaddr=0x3ffb0000 size=0x038c8 ( 14536) load
+I (206) esp_image: segment 2: paddr=0x0003d908 vaddr=0x40080000 size=0x00400 (  1024) load
+0x40080000: _WindowOverflow4 at D:/Codes/esp-idf-v3.3.4/components/freertos/xtensa_vectors.S:1779
+
+I (207) esp_image: segment 3: paddr=0x0003dd10 vaddr=0x40080400 size=0x02300 (  8960) load
+I (219) esp_image: segment 4: paddr=0x00040018 vaddr=0x400d0018 size=0xa281c (665628) map
+0x400d0018: _flash_cache_start at ??:?
+
+I (458) esp_image: segment 5: paddr=0x000e283c vaddr=0x40082700 size=0x12e00 ( 77312) load
+0x40082700: _xt_medint2 at D:/Codes/esp-idf-v3.3.4/components/freertos/xtensa_vectors.S:1211
+
+I (503) boot: Loaded app from partition at offset 0x10000
+I (517) boot: Set actual ota_seq=1 in otadata[0]
+I (517) boot: Disabling RNG early entropy source...
+I (518) cpu_start: Pro cpu up.
+I (521) cpu_start: Application information:
+I (526) cpu_start: Project name:     led_strip
+I (531) cpu_start: App version:      0c0f84b-dirty
+I (536) cpu_start: Compile time:     Mar  3 2022 21:48:42
+I (542) cpu_start: ELF file SHA256:  0d8878a3331812f8...
+I (548) cpu_start: ESP-IDF:          v3.3.4-dirty
+I (554) cpu_start: Starting app cpu, entry point is 0x40081210
+0x40081210: call_start_cpu1 at D:/Codes/esp-idf-v3.3.4/components/esp32/cpu_start.c:268
+
+I (0) cpu_start: App cpu up.
+I (564) heap_init: Initializing. RAM available for dynamic allocation:
+I (571) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (577) heap_init: At 3FFBAE18 len 000251E8 (148 KiB): DRAM
+I (583) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (590) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (596) heap_init: At 40095500 len 0000AB00 (42 KiB): IRAM
+I (602) cpu_start: Pro cpu start user code
+I (285) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+W (349) wrapper_kv: nvs get blob q_rt failed with 1102
+I (349) factory_rst: quick reboot times 1, don't need to restore
+I (369) wifi:wifi driver task: 3ffc2ef4, prio:23, stack:3584, core=0
+I (369) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
+I (369) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
+I (409) wifi:wifi firmware version: 74b0970
+I (409) wifi:config NVS flash: enabled
+I (409) wifi:config nano formating: disabled
+I (409) wifi:Init dynamic tx buffer num: 32
+I (409) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init management frame dynamic rx buffer num: 32
+I (419) wifi:Init management short buffer num: 32
+I (419) wifi:Init static rx buffer size: 1600
+I (429) wifi:Init static rx buffer num: 10
+I (429) wifi:Init dynamic rx buffer num: 32
+I (529) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0
+I (539) wifi:mode : sta (30:ae:a4:1f:b0:f0)
+[prt] log level set as: [ 4 ]
+W (539) wrapper_kv: nvs get blob ssid failed with 1102
+[crt] awss_config_press(180): enable awss
+I (549) app main: IOTX_AWSS_ENABLE
+I (549) app main: IOTX_AWSS_START
+[inf] zconfig_init(260): zconfig_init
+I (559) wifi:ic_enable_sniffer
+I (559) awss: Open monitor mode
+[crt] aws_switch_channel(166): chan 1
+[crt] awss_save_apinfo(271): [1] ssid:HUAWEI-tong_Wi-Fi5, mac:bc1ae4f3ce45, chn:1, rssi:-75, adha:0
+[crt] awss_save_apinfo(271): [2] ssid:TP-LINK_2505, mac:206be7918d61, chn:1, rssi:-84, adha:0
+[crt] awss_save_apinfo(271): [3] ssid:HUAWEI-tong, mac:bc1ae4c3ce40, chn:1, rssi:-76, adha:0
+[crt] awss_save_apinfo(271): [4] ssid:TP-LINK_275A, mac:480eec70275a, chn:1, rssi:-74, adha:0
+[crt] aws_switch_channel(166): chan 6
+[crt] awss_save_apinfo(271): [5] ssid:ChinaNet-kjKH, mac:247e511111f8, chn:5, rssi:-66, adha:0
+[crt] awss_save_apinfo(271): [6] ssid:FAST_E8A7, mac:9c7f8136e8a7, chn:11, rssi:-87, adha:0
+[crt] aws_switch_channel(166): chan 3
+[crt] awss_save_apinfo(271): [7] ssid:一橙不变, mac:0840f3716e31, chn:3, rssi:-77, adha:0
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] awss_save_apinfo(271): [8] ssid:china2501, mac:8cdef9350b2a, chn:5, rssi:-87, adha:0
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] awss_save_apinfo(271): [9] ssid:TP-LINK_H, mac:50642b456e9f, chn:10, rssi:-62, adha:0
+[crt] awss_save_apinfo(271): [10] ssid:ChinaNet-Ya7i, mac:c09fe178db80, chn:9, rssi:-92, adha:0
+[crt] aws_switch_channel(166): chan 10
+[crt] awss_save_apinfo(271): [11] ssid:CMCC-C4Wq, mac:20968aec8b28, chn:10, rssi:-86, adha:0
+[crt] awss_save_apinfo(271): [12] ssid:ChinaNetliu, mac:5078b376cf40, chn:12, rssi:-88, adha:0
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+I (6319) factory_rst: Quick reboot timeout, clear reboot times
+[crt] aws_switch_channel(166): chan 3
+[crt] awss_save_apinfo(271): [13] ssid:CU_7dd8, mac:30424072a617, chn:3, rssi:-90, adha:0
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] awss_save_apinfo(271): [14] ssid:ChinaNet-snJg, mac:c4047baf9676, chn:7, rssi:-90, adha:0
+[crt] aws_switch_channel(166): chan 8
+[crt] awss_save_apinfo(271): [15] ssid:ChinaNet-tmRS, mac:7c60971a8974, chn:8, rssi:-94, adha:0
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 62
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 6
+[crt] awss_save_apinfo(271): [16] ssid:, mac:3ccd5787b7b1, chn:11, rssi:-95, adha:0
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] aws_switch_channel(166): chan 13
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 10
+[crt] awss_save_apinfo(271): [17] ssid:, mac:105ddc197599, chn:1, rssi:-95, adha:0
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 3
+[crt] aws_switch_channel(166): chan 4
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 33
+[crt] aws_switch_channel(166): chan 5
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 12
+[crt] aws_switch_channel(166): chan 1
+[crt] aws_switch_channel(166): chan 11
+[crt] aws_switch_channel(166): chan 2
+[crt] aws_switch_channel(166): chan 6
+[crt] aws_switch_channel(166): chan 7
+[crt] aws_switch_channel(166): chan 8
+[crt] aws_switch_channel(166): chan 9
+[crt] aws_switch_channel(166): chan 10
+[crt] awss_recv_callback_smartconfig(960): hint frame: offset:52, T, sn:ae3
+[crt] awss_recv_callback_smartconfig(964): src:3efd2c06b749, bssid:50642b456e9f
+[inf] zconfig_callback_channel_locked(118): channel lock @ 10
+I (28969) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(960): hint frame: offset:56, F, sn:c7
+[crt] awss_recv_callback_smartconfig(964): src:3efd2c06b749, bssid:50642b456e9f
+I (28999) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] ae5 T 4e0
+I (29029) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 0+1 [98] ae7 T 11b
+[crt] awss_recv_callback_smartconfig(1074): 0+2 [96] ae9 T 18f
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:ae9, sn:ae7-ae5=ffe, pos:1-2, len:11b
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:ae9, sn:ae7-ae5=ffe, pos:1-2, len:11b
+[crt] awss_recv_callback_smartconfig(1074): 0+3 [94] aeb T 209
+[crt] zconfig_recv_completed(151): ssid auto-complete: TP-LINK_H
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] d0  F 4e0
+I (29099) app main: IOTX_AWSS_LOCK_CHAN
+[crt] zconfig_recv_completed(151): ssid auto-complete: TP-LINK_H
+[crt] awss_recv_callback_smartconfig(1074): 0+5 [78] af0 T 334
+[crt] awss_recv_callback_smartconfig(1074): 0+4 [70] d9  F 28c
+[crt] awss_recv_callback_smartconfig(1074): 0+6 [76] af2 T 3b0
+[crt] awss_recv_callback_smartconfig(1074): 0+7 [74] af4 T 40d
+[crt] awss_recv_callback_smartconfig(1074): 0+8 [72] af6 T 4ac
+[crt] awss_recv_callback_smartconfig(1090): 8+0 [100] af8 T 3e1
+I (29169) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 8+0 [100] e5  F 3e1
+I (29229) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 8+0 [100] afa T 3e1
+I (29239) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 8+1 [98] afc T 129
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [98] -> [99]
+[crt] awss_recv_callback_smartconfig(1074): 8+2 [97] afe T 1ae
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [97] -> [99]
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:afe, sn:afc-afa=ffe, pos:9-10, len:129
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:afe, sn:afe-afc=0, pos:10-10, len:1ae
+[crt] awss_recv_callback_smartconfig(1074): 8+3 [97] b00 T 22b
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [97] -> [99]
+[crt] awss_recv_callback_smartconfig(1074): 8+4 [97] b02 T 2bf
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [97] -> [99]
+[crt] awss_recv_callback_smartconfig(1074): 8+5 [97] b04 T 328
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [97] -> [99]
+[crt] awss_recv_callback_smartconfig(1074): 8+6 [97] b06 T 399
+[crt] awss_recv_callback_smartconfig(1074): 8+7 [95] b08 T 403
+[crt] awss_recv_callback_smartconfig(1074): 8+8 [93] b0a T 4a7
+[crt] awss_recv_callback_smartconfig(1090): 16+0 [100] b0c T 3e2
+I (29379) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 16+0 [100] b0e T 3e2
+I (29439) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 16+1 [98] b10 T 13d
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b10, sn:b10-b0e=0, pos:17-17, len:13d
+[crt] awss_recv_callback_smartconfig(1074): 16+2 [96] b12 T 1b3
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b12, sn:b10-b0e=ffe, pos:17-18, len:13d
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b12, sn:b12-b10=0, pos:18-18, len:1b3
+[crt] awss_recv_callback_smartconfig(1074): 16+3 [94] b14 T 201
+[crt] awss_recv_callback_smartconfig(1074): 16+4 [92] b16 T 2b0
+[crt] awss_recv_callback_smartconfig(1074): 16+5 [90] b18 T 311
+[crt] awss_recv_callback_smartconfig(1074): 16+6 [88] b1a T 3aa
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b18-b16=ffe, pos:21-22, len:311
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b1a-b18=0, pos:22-22, len:3aa
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b18-b16=ffe, pos:21-22, len:311
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b1a-b18=0, pos:22-22, len:3aa
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b1a-b18=0, pos:22-22, len:3aa
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b1a-b18=0, pos:22-22, len:3aa
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b1a, sn:b1a-b18=0, pos:22-22, len:3aa
+[crt] awss_recv_callback_smartconfig(1044):     enter try_to_sync_pos: timeout
+[crt] awss_recv_callback_smartconfig(1058):     X+5 [1] 121 F 311
+[crt] awss_recv_callback_smartconfig(1058):     X+6 [2] 123 F 3aa
+[crt] awss_recv_callback_smartconfig(1090): 24+0 [100] b20 T 3e3
+I (29639) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 24+0 [100] b22 T 3e3
+I (29649) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 24+1 [98] b24 T 13d
+[crt] awss_recv_callback_smartconfig(1058):     X+7 [3] 126 F 410
+[crt] awss_recv_callback_smartconfig(1074): 24+2 [96] b26 T 18d
+[crt] awss_recv_callback_smartconfig(1074): 24+3 [94] b28 T 221
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] b2a T 4e0
+I (29709) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b2a, sn:b28-b26=ffe, pos:3-0, len:221
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] b2a T 4e0
+I (29729) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1081):     exit try_to_sync_pos: group frame
+[crt] try_to_sync_pos(664): [5]=334, [5]=311
+[crt] try_to_sync_pos(664): [13]=328, [5]=311
+[crt] try_to_sync_pos(675): match=2, match_group=16, match_end=8
+[crt] try_to_sync_pos(738):     X = 16, score=22, match=2, reason=1
+[crt] try_to_sync_pos(750):     16+7 [20] F 410
+[crt] awss_recv_callback_smartconfig(1090): 24+0 [100] 135 F 3e3
+I (29779) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] b2c T 4e0
+I (29789) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] b2e T 4e0
+I (29799) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 0+1 [98] b30 T 11b
+[crt] awss_recv_callback_smartconfig(1074): 24+2 [70] 144 F 18d
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] 148 F 4e0
+I (29829) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] 14d F 4e0
+I (29839) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 0+0 [100] 150 F 4e0
+I (29849) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 0+2 [96] b32 T 18f
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 0+3 [96] b34 T 209
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 0+4 [96] b36 T 28c
+[crt] awss_recv_callback_smartconfig(1074): 0+5 [94] b38 T 334
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [94] -> [97]
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b38, sn:b34-b32=ffc, pos:3-5, len:209
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b38, sn:b36-b34=ffe, pos:4-5, len:28c
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b38, sn:b38-b36=0, pos:5-5, len:334
+[crt] awss_recv_callback_smartconfig(1074): 0+6 [95] b3a T 3b0
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [95] -> [98]
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b3a, sn:b34-b32=ffa, pos:3-6, len:209
+[crt] awss_recv_callback_smartconfig(1066):      drop: group_sn:b3a, sn:b34-b32=ffa, pos:3-6, len:209
+[crt] awss_recv_callback_smartconfig(1074): 0+7 [96] b3c T 40d
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 0+8 [96] b3e T 4ac
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1090): 8+0 [100] b42 T 3e1
+I (29999) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1104):      invalid len = 178
+[crt] awss_recv_callback_smartconfig(1074): 8+1 [92] b46 T 129
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [92] -> [96]
+[crt] awss_recv_callback_smartconfig(1074): 8+2 [94] b48 T 1ae
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [94] -> [97]
+[crt] awss_recv_callback_smartconfig(1074): 8+3 [95] b4a T 22b
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [95] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 8+4 [96] b4c T 2bf
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 8+5 [96] b4e T 328
+[crt] awss_recv_callback_smartconfig(1168):                      uplimit [96] -> [98]
+[crt] awss_recv_callback_smartconfig(1074): 8+6 [96] b50 T 399
+[crt] awss_recv_callback_smartconfig(1074): 8+7 [94] b52 T 403
+[crt] awss_recv_callback_smartconfig(1074): 8+8 [92] b54 T 4a7
+[crt] awss_recv_callback_smartconfig(1090): 16+0 [100] b56 T 3e2
+I (30169) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1090): 16+0 [100] b58 T 3e2
+I (30179) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1074): 16+1 [98] b5a T 13d
+[crt] awss_recv_callback_smartconfig(1074): 16+2 [96] b5c T 1b3
+[crt] awss_recv_callback_smartconfig(1044):     enter try_to_sync_pos: timeout
+[crt] awss_recv_callback_smartconfig(1058):     X+2 [1] 16c F 18f
+[crt] awss_recv_callback_smartconfig(1058):     X+4 [4] 170 F 28c
+[crt] awss_recv_callback_smartconfig(1074): 16+3 [94] b5e T 201
+[crt] awss_recv_callback_smartconfig(1081):     exit try_to_sync_pos: group frame
+[crt] try_to_sync_pos(675): match=2, match_group=0, match_end=8
+[crt] try_to_sync_pos(664): [10]=1ae, [2]=18f
+[crt] try_to_sync_pos(664): [18]=1b3, [2]=18f
+[crt] try_to_sync_pos(664): [26]=18d, [2]=18f
+[crt] try_to_sync_pos(738):     X = 0, score=22, match=2, reason=1
+[crt] awss_recv_callback_smartconfig(1090): 8+0 [100] 17c F 3e1
+I (30319) app main: IOTX_AWSS_LOCK_CHAN
+[crt] awss_recv_callback_smartconfig(1104):      invalid len = 182
+[crt] awss_recv_callback_smartconfig(1074): 8+3 [84] 183 F 22b
+[crt] awss_recv_callback_smartconfig(1074): 8+4 [82] 185 F 2bf
+[crt] awss_recv_callback_smartconfig(1074): 8+5 [80] 187 F 328
+[crt] awss_recv_callback_smartconfig(1074): 8+6 [78] 189 F 399
+[crt] awss_recv_callback_smartconfig(1074): 8+7 [76] 18b F 403
+[crt] awss_recv_callback_smartconfig(1074): 16+4 [92] b60 T 2b0
+[crt] awss_recv_callback_smartconfig(1074): 16+5 [90] b62 T 311
+[crt] awss_recv_callback_smartconfig(1074): 16+6 [88] b64 T 3aa
+[crt] awss_recv_callback_smartconfig(1074): 16+7 [86] b66 T 410
+[crt] awss_recv_callback_smartconfig(1074): 16+8 [84] b68 T 4b0
+[crt] zconfig_get_ssid_passwd(252):
+63 65 65 60 65 65 65 65
+65 65 65 65 65 61 5f 5d
+63 61 5f 5d 5b 59 56 54
+62 60 5e
+[crt] zconfig_get_ssid_passwd(261):
+1b 0f 09 0c 34 30 0d 2c
+29 2e 2b 3f 28 19 03 27
+3d 33 01 30 11 2a 10 30
+3d 0d 21
+[crt] zconfig_get_ssid_passwd(263):
+[crt] zconfig_get_ssid_passwd(326): SSID1: [TP-LINK_H]
+[inf] zconfig_callback_over(136): zconfig done. ssid:TP-LINK_H, mac:50642b456e9f
+I (30439) app main: IOTX_AWSS_GOT_SSID_PASSWD
+I (30449) wifi:ic_disable_sniffer
+I (30449) awss: Close monitor mode
+I (30659) app main: IOTX_AWSS_CONNECT_ROUTER
+I (30659) awss: ssid: TP-LINK_H, password: 961385fei, channel: 10
+I (30659) awss: Connecting AP
+I (30779) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (31159) awss: Connecting AP
+I (31659) awss: Connecting AP
+I (31759) wifi:state: init -> auth (b0)
+I (31799) wifi:state: auth -> assoc (0)
+I (31849) wifi:state: assoc -> run (10)
+I (32159) awss: Connecting AP
+I (32319) wifi:connected with TP-LINK_H, aid = 14, channel 10, BW20, bssid = 50:64:2b:45:6e:9f
+I (32319) wifi:security type: 4, phy: bgn, rssi: -60
+I (32329) wifi:pm start, type: 1
+
+I (32359) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (32659) awss: Connecting AP
+I (33159) awss: Connecting AP
+I (33349) event: sta ip: 192.168.31.45, mask: 255.255.255.0, gw: 192.168.31.1
+[inf] dm_client_open(37): CM Fd: 0
+I (33369) app main: IOTX_CONN_CLOUD
+[wrn] IOT_MQTT_Construct(467): Using default hostname: 'a1CBe1dhuIA.iot-as-mqtt.cn-shanghai.aliyuncs.com'
+[wrn] IOT_MQTT_Construct(474): Using default port: [443]
+[wrn] IOT_MQTT_Construct(481): Using default client_id: a1CBe1dhuIA.esp32-led-strip|timestamp=2524608000000,securemode=2,signmethod=hmacsha256,gw=0,ext=0,_v=sdk-c-3.0.1|
+[wrn] IOT_MQTT_Construct(488): Using default username: esp32-led-strip&a1CBe1dhuIA
+[wrn] IOT_MQTT_Construct(496): Using default password: ******
+[inf] iotx_mc_init(230): MQTT init success!
+I (33659) awss: AP connected
+I (33659) app main: IOTX_AWSS_GOT_IP
+?[1;32;40muser_awss_status_event_handler.68: Awss Status 4109
+I (33669) udp: success to establish udp, fd=55
+I (33699) app main: IOTX_AWSS_SUC_NOTIFY
+?[1;32;40muser_awss_status_event_handler.68: Awss Status 4110
+[inf] awss_notify_dev_info(205): topic:/sys/awss/event/connectap/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/awss/event/connectap/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] _mqtt_connect(778): connect params: MQTTVersion=4, clientID=a1CBe1dhuIA.esp32-led-strip|timestamp=2524608000000,securemode=2,signmethod=hmacsha256,gw=0,ext=0,_v=sdk-c-3.0.1|, keepAliveInterval=30, username=esp32-led-strip&a1CBe1dhuIA
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /ota/device/request/a1CBe1dhuIA/esp32-led-strip!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /ota/device/upgrade/a1CBe1dhuIA/esp32-led-strip!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/config/get_reply!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/config/push!
+?[1;32;40muser_mqtt_connect_succ_event_handler.415: ITE_MQTT_CONNECT_SUCC
+[inf] _dm_client_event_cloud_connected_handle(164): IOTX_CM_EVENT_CLOUD_CONNECTED
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/awss/enrollee/match_reply!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/awss/enrollee/checkin!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/awss/enrollee/found_reply!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/cipher/get_reply!
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/awss/device/switchap!
+W (34999) wrapper_kv: nvs get blob awss.rst failed with 1102
+[inf] awss_report_token_to_cloud(351): report token res:12
+[inf] CoAPResource_register(145): CoAPResource_register:Alread exist
+[inf] CoAPResource_register(151): The resource /sys/device/info/get already exist, re-write it
+[inf] CoAPResource_register(145): CoAPResource_register:Alread exist
+[inf] CoAPResource_register(151): The resource /sys/a1CBe1dhuIA/esp32-led-strip/device/info/get already exist, re-write it
+[inf] awss_bind_report_statis(70): bind report statis success
+I (35059) app main: IOTX_CONN_CLOUD_SUC
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/event/+/post_reply!
+[inf] iotx_mc_deliver_message(1280): NO matching any topic, call default handle function
+[wrn] iotx_cloud_conn_mqtt_event_handle(178): bypass 102 bytes on [/sys/a1CBe1dhuIA/esp32-led-strip/thing/deviceinfo/update_reply]
+[inf] awss_report_token_reply(105): awss_report_token_reply
+[inf] dm_client_subscribe(86): Subscribe Result: 13
+[inf] dm_client_subscribe_all(124): index: 1
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/property/desired/delete_reply!
+[inf] dm_client_subscribe(86): Subscribe Result: 14
+[inf] dm_client_subscribe_all(124): index: 2
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/property/desired/get_reply!
+I (36249) app main: IOTX_AWSS_BIND_NOTIFY
+?[1;32;40muser_awss_status_event_handler.68: Awss Status 4111
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] dm_client_subscribe(86): Subscribe Result: 15
+[inf] dm_client_subscribe_all(124): index: 3
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/service/property/get!
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] dm_client_subscribe(86): Subscribe Result: 16
+[inf] dm_client_subscribe_all(124): index: 4
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/service/property/set!
+[inf] dm_client_subscribe(86): Subscribe Result: 17
+[inf] dm_client_subscribe_all(124): index: 5
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/service/+!
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] dm_client_subscribe(86): Subscribe Result: 18
+[inf] dm_client_subscribe_all(124): index: 6
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/deviceinfo/update_reply!
+[inf] dm_client_subscribe(86): Subscribe Result: 19
+[inf] dm_client_subscribe_all(124): index: 7
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/deviceinfo/delete_reply!
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] dm_client_subscribe(86): Subscribe Result: 20
+[inf] dm_client_subscribe_all(124): index: 8
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/dynamicTsl/get_reply!
+[inf] dm_client_subscribe(86): Subscribe Result: 21
+[inf] dm_client_subscribe_all(124): index: 9
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/rrpc/request/+!
+[inf] dm_client_subscribe(86): Subscribe Result: 22
+[inf] dm_client_subscribe_all(124): index: 10
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /ext/ntp/a1CBe1dhuIA/esp32-led-strip/response!
+[inf] dm_client_subscribe(86): Subscribe Result: 23
+[inf] dm_client_subscribe_all(124): index: 11
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /ext/error/a1CBe1dhuIA/esp32-led-strip!
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] iotx_mc_deliver_message(1280): NO matching any topic, call default handle function
+[wrn] iotx_cloud_conn_mqtt_event_handle(178): bypass 138 bytes on [/sys/a1CBe1dhuIA/esp32-led-strip/_thing/event/notify]
+[inf] dm_client_subscribe(86): Subscribe Result: 24
+[inf] dm_client_subscribe_all(124): index: 12
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/model/down_raw!
+[inf] dm_client_subscribe(86): Subscribe Result: 25
+[inf] dm_client_subscribe_all(124): index: 13
+[inf] wrapper_mqtt_subscribe(2879): mqtt subscribe packet sent,topic = /sys/a1CBe1dhuIA/esp32-led-strip/thing/model/up_raw_reply!
+[inf] dm_client_subscribe(86): Subscribe Result: 26
+[inf] iotx_dm_subscribe(208): Devid 0 Sub Completed
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 10
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"devid":0}
+?[1;32;40muser_initialized.110: Device Initialized
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 0
+?[1;32;40muser_connected_event_handler.76: Cloud Connected
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(209): send notify successnfo/notify
+[inf] awss_notify_dev_info(209): send notify successnfo/notify
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"964354064","devid":0,"serviceid":"CommonService","payload":{"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316079689"},"ctx":"00000000"}
+I (48629) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316079689"}
+I (48649) linkkit_example_solo: Payload: {"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316079689"}
+I (48659) linkkit_example_solo: params1:{"Heartbeat":1}
+I (48669) linkkit_example_solo: params3:{"Heartbeat":1}
+[inf] awss_process_get_devinfo(282): sending message to app: {"id":123,"code":200,"data":{"awssVer":{"smartconfig":"2.0","zconfig":"2.0","router":"2.0","ap":"2.0","softap":"2.0"},"productKey":"a1CBe1dhuIA","deviceName":"esp32-led-strip","mac":"30:AE:A4:1F:B0:F0","ip":"19
+2.168.31.45","cipherT ...
+[inf] awss_update_token(62): update token
+[inf] awss_report_token_to_cloud(351): report token res:27
+[inf] awss_report_token_reply(105): awss_report_token_reply
+[inf] awss_notify_dev_info(205): topic:/sys/device/info/notify
+[inf] awss_notify_dev_info(209): send notify success
+[inf] awss_update_token(62): update token
+[inf] awss_report_token_to_cloud(351): report token res:28
+[inf] awss_report_token_reply(105): awss_report_token_reply
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] iotx_mc_cycle(1570): receive ping response!
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1095322683","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"},"ctx":"00000000"}
+I (67719) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (67729) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (67749) linkkit_example_solo: params1:{"LightSwitch":1}
+I (67749) linkkit_example_solo: LightSwitch: 1
+I (67759) lightbulb: lightbulb_set_on : true
+I (67759) lightbulb: r:0,g:0,b:0
+I (67769) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1105045485","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"},"ctx":"00000000"}
+I (67809) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (67819) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (67839) linkkit_example_solo: params1:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (67849) linkkit_example_solo: params3:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (67859) linkkit_example_solo: Hue: 308
+I (67859) lightbulb: lightbulb_set_hue : 308.000000
+I (67869) lightbulb: r:0,g:0,b:0
+I (67869) linkkit_example_solo: Saturation: 76
+I (67879) lightbulb: lightbulb_set_saturation : 76.000000
+I (67879) lightbulb: r:0,g:0,b:0
+I (67889) linkkit_example_solo: Value: 98
+I (67889) lightbulb: lightbulb_set_brightness : 98
+I (67899) lightbulb: r:249,g:58,b:224
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1109930142","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"},"ctx":"00000000"}
+I (67929) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (67949) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (67959) linkkit_example_solo: params1:{"LightSwitch":1}
+I (67959) linkkit_example_solo: LightSwitch: 1
+I (67969) lightbulb: lightbulb_set_on : true
+I (67969) lightbulb: r:249,g:58,b:224
+I (67979) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1119758602","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"},"ctx":"00000000"}
+I (68019) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (68039) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (68049) linkkit_example_solo: params1:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (68059) linkkit_example_solo: params3:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (68069) linkkit_example_solo: Hue: 308
+I (68069) lightbulb: lightbulb_set_hue : 308.000000
+I (68079) lightbulb: r:249,g:58,b:224
+I (68089) linkkit_example_solo: Saturation: 76
+I (68089) lightbulb: lightbulb_set_saturation : 76.000000
+I (68099) lightbulb: r:249,g:58,b:224
+I (68099) linkkit_example_solo: Value: 98
+I (68099) lightbulb: lightbulb_set_brightness : 98
+I (68109) lightbulb: r:249,g:58,b:224
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1133946183","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"},"ctx":"00000000"}
+I (69529) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (69549) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (69559) linkkit_example_solo: params1:{"LightSwitch":1}
+I (69569) linkkit_example_solo: LightSwitch: 1
+I (69569) lightbulb: lightbulb_set_on : true
+I (69579) lightbulb: r:249,g:58,b:224
+I (69579) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1137493216","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"},"ctx":"00000000"}
+I (70009) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (70029) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":308,\"Saturation\":76,\"Value\":98}}","seq":"3230876@1646316096843"}
+I (70049) linkkit_example_solo: params1:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (70049) linkkit_example_solo: params3:{"HSVColor":{"Hue":308,"Saturation":76,"Value":98}}
+I (70059) linkkit_example_solo: Hue: 308
+I (70069) lightbulb: lightbulb_set_hue : 308.000000
+I (70069) lightbulb: r:249,g:58,b:224
+I (70079) linkkit_example_solo: Saturation: 76
+I (70079) lightbulb: lightbulb_set_saturation : 76.000000
+I (70089) lightbulb: r:249,g:58,b:224
+I (70089) linkkit_example_solo: Value: 98
+I (70099) lightbulb: lightbulb_set_brightness : 98
+I (70099) lightbulb: r:249,g:58,b:224
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1142973634","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"},"ctx":"00000000"}
+I (70529) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"}
+I (70549) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"}
+I (70569) linkkit_example_solo: params1:{"HSVColor":{"Hue":223,"Saturation":25,"Value":98}}
+I (70569) linkkit_example_solo: params3:{"HSVColor":{"Hue":223,"Saturation":25,"Value":98}}
+I (70579) linkkit_example_solo: Hue: 223
+I (70589) lightbulb: lightbulb_set_hue : 223.000000
+I (70589) lightbulb: r:58,g:114,b:249
+I (70599) linkkit_example_solo: Saturation: 25
+I (70599) lightbulb: lightbulb_set_saturation : 25.000000
+I (70609) lightbulb: r:186,g:204,b:249
+I (70609) linkkit_example_solo: Value: 98
+I (70619) lightbulb: lightbulb_set_brightness : 98
+I (70619) lightbulb: r:186,g:204,b:249
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1156791966","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"},"ctx":"00000000"}
+I (72249) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"}
+I (72269) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":223,\"Saturation\":25,\"Value\":98}}","seq":"3230876@1646316101473"}
+I (72289) linkkit_example_solo: params1:{"HSVColor":{"Hue":223,"Saturation":25,"Value":98}}
+I (72289) linkkit_example_solo: params3:{"HSVColor":{"Hue":223,"Saturation":25,"Value":98}}
+I (72299) linkkit_example_solo: Hue: 223
+I (72309) lightbulb: lightbulb_set_hue : 223.000000
+I (72309) lightbulb: r:186,g:204,b:249
+I (72319) linkkit_example_solo: Saturation: 25
+I (72319) lightbulb: lightbulb_set_saturation : 25.000000
+I (72329) lightbulb: r:186,g:204,b:249
+I (72339) linkkit_example_solo: Value: 98
+I (72339) lightbulb: lightbulb_set_brightness : 98
+I (72339) lightbulb: r:186,g:204,b:249
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1162560272","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"},"ctx":"00000000"}
+I (72969) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"}
+I (72989) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"}
+I (73009) linkkit_example_solo: params1:{"HSVColor":{"Hue":122,"Saturation":68,"Value":98}}
+I (73019) linkkit_example_solo: params3:{"HSVColor":{"Hue":122,"Saturation":68,"Value":98}}
+I (73019) linkkit_example_solo: Hue: 122
+I (73029) lightbulb: lightbulb_set_hue : 122.000000
+I (73039) lightbulb: r:186,g:249,b:188
+I (73039) linkkit_example_solo: Saturation: 68
+I (73039) lightbulb: lightbulb_set_saturation : 68.000000
+I (73049) lightbulb: r:79,g:249,b:84
+I (73059) linkkit_example_solo: Value: 98
+I (73059) lightbulb: lightbulb_set_brightness : 98
+I (73069) lightbulb: r:79,g:249,b:84
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1168362179","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"},"ctx":"00000000"}
+I (73689) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (73699) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (73719) linkkit_example_solo: params1:{"LightSwitch":1}
+I (73719) linkkit_example_solo: LightSwitch: 1
+I (73729) lightbulb: lightbulb_set_on : true
+I (73729) lightbulb: r:79,g:249,b:84
+I (73739) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1169311175","devid":0,"serviceid":"CommonService","payload":{"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316104718"},"ctx":"00000000"}
+I (73769) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316104718"}
+I (73789) linkkit_example_solo: Payload: {"flag":7,"method":0,"params":"{\"Heartbeat\":1}","seq":"3230876@1646316104718"}
+I (73799) linkkit_example_solo: params1:{"Heartbeat":1}
+I (73809) linkkit_example_solo: params3:{"Heartbeat":1}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1172339901","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"},"ctx":"00000000"}
+I (74229) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"}
+I (74249) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":122,\"Saturation\":68,\"Value\":98}}","seq":"3230876@1646316103882"}
+I (74269) linkkit_example_solo: params1:{"HSVColor":{"Hue":122,"Saturation":68,"Value":98}}
+I (74279) linkkit_example_solo: params3:{"HSVColor":{"Hue":122,"Saturation":68,"Value":98}}
+I (74289) linkkit_example_solo: Hue: 122
+I (74289) lightbulb: lightbulb_set_hue : 122.000000
+I (74299) lightbulb: r:79,g:249,b:84
+I (74299) linkkit_example_solo: Saturation: 68
+I (74299) lightbulb: lightbulb_set_saturation : 68.000000
+I (74309) lightbulb: r:79,g:249,b:84
+I (74319) linkkit_example_solo: Value: 98
+I (74319) lightbulb: lightbulb_set_brightness : 98
+I (74329) lightbulb: r:79,g:249,b:84
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1180755823","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"},"ctx":"00000000"}
+I (75149) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"}
+I (75169) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"}
+I (75189) linkkit_example_solo: params1:{"HSVColor":{"Hue":1,"Saturation":92,"Value":98}}
+I (75199) linkkit_example_solo: params3:{"HSVColor":{"Hue":1,"Saturation":92,"Value":98}}
+I (75199) linkkit_example_solo: Hue: 1
+I (75209) lightbulb: lightbulb_set_hue : 1.000000
+I (75209) lightbulb: r:249,g:81,b:79
+I (75219) linkkit_example_solo: Saturation: 92
+I (75219) lightbulb: lightbulb_set_saturation : 92.000000
+I (75229) lightbulb: r:249,g:20,b:17
+I (75229) linkkit_example_solo: Value: 98
+I (75239) lightbulb: lightbulb_set_brightness : 98
+I (75239) lightbulb: r:249,g:20,b:17
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1190653275","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"},"ctx":"00000000"}
+I (76469) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"}
+I (76489) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":1,\"Saturation\":92,\"Value\":98}}","seq":"3230876@1646316105806"}
+I (76509) linkkit_example_solo: params1:{"HSVColor":{"Hue":1,"Saturation":92,"Value":98}}
+I (76509) linkkit_example_solo: params3:{"HSVColor":{"Hue":1,"Saturation":92,"Value":98}}
+I (76519) linkkit_example_solo: Hue: 1
+I (76529) lightbulb: lightbulb_set_hue : 1.000000
+I (76529) lightbulb: r:249,g:20,b:17
+I (76539) linkkit_example_solo: Saturation: 92
+I (76539) lightbulb: lightbulb_set_saturation : 92.000000
+I (76549) lightbulb: r:249,g:20,b:17
+I (76549) linkkit_example_solo: Value: 98
+I (76559) lightbulb: lightbulb_set_brightness : 98
+I (76559) lightbulb: r:249,g:20,b:17
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1196031089","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"},"ctx":"00000000"}
+I (76989) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (77009) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (77029) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (77029) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (77039) linkkit_example_solo: Hue: 349
+I (77049) lightbulb: lightbulb_set_hue : 349.000000
+I (77049) lightbulb: r:249,g:17,b:61
+I (77059) linkkit_example_solo: Saturation: 95
+I (77059) lightbulb: lightbulb_set_saturation : 95.000000
+I (77069) lightbulb: r:249,g:10,b:56
+I (77069) linkkit_example_solo: Value: 98
+I (77079) lightbulb: lightbulb_set_brightness : 98
+I (77079) lightbulb: r:249,g:10,b:56
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1205726768","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"},"ctx":"00000000"}
+I (78309) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (78329) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (78349) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (78349) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (78359) linkkit_example_solo: Hue: 349
+I (78369) lightbulb: lightbulb_set_hue : 349.000000
+I (78369) lightbulb: r:249,g:10,b:56
+I (78379) linkkit_example_solo: Saturation: 95
+I (78379) lightbulb: lightbulb_set_saturation : 95.000000
+I (78389) lightbulb: r:249,g:10,b:56
+I (78389) linkkit_example_solo: Value: 98
+I (78399) lightbulb: lightbulb_set_brightness : 98
+I (78399) lightbulb: r:249,g:10,b:56
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1225817717","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"},"ctx":"00000000"}
+I (80629) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"}
+I (80649) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"}
+I (80669) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":30}}
+I (80669) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":30}}
+I (80679) linkkit_example_solo: Hue: 349
+I (80689) lightbulb: lightbulb_set_hue : 349.000000
+I (80689) lightbulb: r:249,g:10,b:56
+I (80699) linkkit_example_solo: Saturation: 95
+I (80699) lightbulb: lightbulb_set_saturation : 95.000000
+I (80709) lightbulb: r:249,g:10,b:56
+I (80709) linkkit_example_solo: Value: 30
+I (80719) lightbulb: lightbulb_set_brightness : 30
+I (80719) lightbulb: r:76,g:2,b:15
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1230070612","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"},"ctx":"00000000"}
+I (81349) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (81369) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":98}}","seq":"3230876@1646316107997"}
+I (81389) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (81389) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":98}}
+I (81399) linkkit_example_solo: Hue: 349
+I (81409) lightbulb: lightbulb_set_hue : 349.000000
+I (81409) lightbulb: r:76,g:2,b:15
+I (81419) linkkit_example_solo: Saturation: 95
+I (81419) lightbulb: lightbulb_set_saturation : 95.000000
+I (81429) lightbulb: r:76,g:2,b:15
+I (81429) linkkit_example_solo: Value: 98
+I (81439) lightbulb: lightbulb_set_brightness : 98
+I (81439) lightbulb: r:249,g:10,b:56
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1235370699","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"},"ctx":"00000000"}
+I (81869) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"}
+I (81889) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":30}}","seq":"3230876@1646316111627"}
+I (81909) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":30}}
+I (81909) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":30}}
+I (81919) linkkit_example_solo: Hue: 349
+I (81929) lightbulb: lightbulb_set_hue : 349.000000
+I (81929) lightbulb: r:249,g:10,b:56
+I (81939) linkkit_example_solo: Saturation: 95
+I (81939) lightbulb: lightbulb_set_saturation : 95.000000
+I (81949) lightbulb: r:249,g:10,b:56
+I (81949) linkkit_example_solo: Value: 30
+I (81959) lightbulb: lightbulb_set_brightness : 30
+I (81959) lightbulb: r:76,g:2,b:15
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1235465822","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"},"ctx":"00000000"}
+I (81999) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (82009) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316095656"}
+I (82019) linkkit_example_solo: params1:{"LightSwitch":1}
+I (82029) linkkit_example_solo: LightSwitch: 1
+I (82039) lightbulb: lightbulb_set_on : true
+I (82039) lightbulb: r:76,g:2,b:15
+I (82049) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1244709080","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"},"ctx":"00000000"}
+I (83069) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"}
+I (83089) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"}
+I (83109) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":100}}
+I (83119) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":100}}
+I (83129) linkkit_example_solo: Hue: 349
+I (83129) lightbulb: lightbulb_set_hue : 349.000000
+I (83139) lightbulb: r:76,g:2,b:15
+I (83139) linkkit_example_solo: Saturation: 95
+I (83139) lightbulb: lightbulb_set_saturation : 95.000000
+I (83149) lightbulb: r:76,g:2,b:15
+I (83159) linkkit_example_solo: Value: 100
+I (83159) lightbulb: lightbulb_set_brightness : 100
+I (83169) lightbulb: r:255,g:12,b:58
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1256152214","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"},"ctx":"00000000"}
+I (84389) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"}
+I (84409) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":349,\"Saturation\":95,\"Value\":100}}","seq":"3230876@1646316113917"}
+I (84429) linkkit_example_solo: params1:{"HSVColor":{"Hue":349,"Saturation":95,"Value":100}}
+I (84439) linkkit_example_solo: params3:{"HSVColor":{"Hue":349,"Saturation":95,"Value":100}}
+I (84449) linkkit_example_solo: Hue: 349
+I (84449) lightbulb: lightbulb_set_hue : 349.000000
+I (84459) lightbulb: r:255,g:12,b:58
+I (84459) linkkit_example_solo: Saturation: 95
+I (84459) lightbulb: lightbulb_set_saturation : 95.000000
+I (84469) lightbulb: r:255,g:12,b:58
+I (84479) linkkit_example_solo: Value: 100
+I (84479) lightbulb: lightbulb_set_brightness : 100
+I (84489) lightbulb: r:255,g:12,b:58
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1261763888","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"},"ctx":"00000000"}
+I (85109) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (85129) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (85149) linkkit_example_solo: params1:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (85159) linkkit_example_solo: params3:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (85169) linkkit_example_solo: Hue: 167
+I (85169) lightbulb: lightbulb_set_hue : 167.000000
+I (85179) lightbulb: r:12,g:255,b:201
+I (85179) linkkit_example_solo: Saturation: 71
+I (85189) lightbulb: lightbulb_set_saturation : 71.000000
+I (85189) lightbulb: r:73,g:255,b:214
+I (85199) linkkit_example_solo: Value: 100
+I (85199) lightbulb: lightbulb_set_brightness : 100
+I (85209) lightbulb: r:73,g:255,b:214
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1271490421","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"},"ctx":"00000000"}
+I (86229) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (86249) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (86269) linkkit_example_solo: params1:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (86279) linkkit_example_solo: params3:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (86289) linkkit_example_solo: Hue: 167
+I (86289) lightbulb: lightbulb_set_hue : 167.000000
+I (86299) lightbulb: r:73,g:255,b:214
+I (86299) linkkit_example_solo: Saturation: 71
+I (86309) lightbulb: lightbulb_set_saturation : 71.000000
+I (86309) lightbulb: r:73,g:255,b:214
+I (86319) linkkit_example_solo: Value: 100
+I (86319) lightbulb: lightbulb_set_brightness : 100
+I (86329) lightbulb: r:73,g:255,b:214
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1277188707","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"},"ctx":"00000000"}
+I (86949) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"}
+I (86969) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"}
+I (86979) linkkit_example_solo: params1:{"LightSwitch":0}
+I (86989) linkkit_example_solo: LightSwitch: 0
+I (86989) lightbulb: lightbulb_set_on : false
+I (86999) lightbulb: r:0,g:0,b:0
+I (86999) linkkit_example_solo: params3:{"LightSwitch":0}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1286887852","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"},"ctx":"00000000"}
+I (88219) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"}
+I (88239) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":0}","seq":"3230876@1646316117864"}
+I (88249) linkkit_example_solo: params1:{"LightSwitch":0}
+I (88259) linkkit_example_solo: LightSwitch: 0
+I (88259) lightbulb: lightbulb_set_on : false
+I (88269) lightbulb: r:0,g:0,b:0
+I (88269) linkkit_example_solo: params3:{"LightSwitch":0}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1289913548","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"},"ctx":"00000000"}
+I (89099) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (89109) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (89119) linkkit_example_solo: params1:{"LightSwitch":1}
+I (89129) linkkit_example_solo: LightSwitch: 1
+I (89129) lightbulb: lightbulb_set_on : true
+I (89139) lightbulb: r:0,g:0,b:0
+I (89139) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1292502755","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"},"ctx":"00000000"}
+I (89179) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (89199) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (89219) linkkit_example_solo: params1:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (89229) linkkit_example_solo: params3:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (89239) linkkit_example_solo: Hue: 167
+I (89239) lightbulb: lightbulb_set_hue : 167.000000
+I (89249) lightbulb: r:0,g:0,b:0
+I (89249) linkkit_example_solo: Saturation: 71
+I (89249) lightbulb: lightbulb_set_saturation : 71.000000
+I (89259) lightbulb: r:0,g:0,b:0
+I (89269) linkkit_example_solo: Value: 100
+I (89269) lightbulb: lightbulb_set_brightness : 100
+I (89269) lightbulb: r:73,g:255,b:214
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1300003618","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"},"ctx":"00000000"}
+I (89699) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (89709) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (89729) linkkit_example_solo: params1:{"LightSwitch":1}
+I (89729) linkkit_example_solo: LightSwitch: 1
+I (89739) lightbulb: lightbulb_set_on : true
+I (89739) lightbulb: r:73,g:255,b:214
+I (89749) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1317864190","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"},"ctx":"00000000"}
+I (91969) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (91989) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"LightSwitch\":1}","seq":"3230876@1646316119452"}
+I (91999) linkkit_example_solo: params1:{"LightSwitch":1}
+I (92009) linkkit_example_solo: LightSwitch: 1
+I (92009) lightbulb: lightbulb_set_on : true
+I (92019) lightbulb: r:73,g:255,b:214
+I (92019) linkkit_example_solo: params3:{"LightSwitch":1}
+[inf] dm_msg_proc_thing_service_request(279): Service Identifier: CommonService
+[inf] _iotx_linkkit_event_callback(243): Receive Message Type: 20
+[inf] _iotx_linkkit_event_callback(245): Receive Message: {"id":"1326629296","devid":0,"serviceid":"CommonService","payload":{"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"},"ctx":"00000000"}
+I (93049) linkkit_example_solo: Service Request Received, Devid: 0, Service ID: CommonService, Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (93069) linkkit_example_solo: Payload: {"flag":0,"method":0,"params":"{\"HSVColor\":{\"Hue\":167,\"Saturation\":71,\"Value\":100}}","seq":"3230876@1646316115942"}
+I (93079) linkkit_example_solo: params1:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (93089) linkkit_example_solo: params3:{"HSVColor":{"Hue":167,"Saturation":71,"Value":100}}
+I (93099) linkkit_example_solo: Hue: 167
+I (93109) lightbulb: lightbulb_set_hue : 167.000000
+I (93109) lightbulb: r:73,g:255,b:214
+I (93119) linkkit_example_solo: Saturation: 71
+I (93119) lightbulb: lightbulb_set_saturation : 71.000000
+I (93129) lightbulb: r:73,g:255,b:214
+I (93129) linkkit_example_solo: Value: 100
+I (93139) lightbulb: lightbulb_set_brightness : 100
+I (93139) lightbulb: r:73,g:255,b:214
+[inf] iotx_mc_keepalive_sub(1699): send MQTT ping...
+[inf] iotx_mc_cycle(1570): receive ping response!
+[inf] awss_report_token_reply(105): awss_report_token_reply
+[inf] awss_process_get_devinfo(282): sending message to app: {"id":123,"code":200,"data":{"awssVer":{"smartconfig":"2.0","zconfig":"2.0","router":"2.0","ap":"2.0","softap":"2.0"},"productKey":"a1CBe1dhuIA","deviceName":"esp32-led-strip","mac":"30:AE:A4:1F:B0:F0","ip":"19
+2.168.31.45","cipherT ...
+[inf] awss_update_token(62): update token
+[inf] awss_report_token_to_cloud(351): report token res:30
+[inf] awss_report_token_reply(105): awss_report_token_reply
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "D:/Software/msys32_idf3-20200714/mingw32/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "D:/Software/msys32_idf3-20200714/mingw32/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:/Codes/esp-idf-v3.3.4/tools/idf_monitor.py", line 134, in _run_outer
+    self.run()
+  File "D:/Codes/esp-idf-v3.3.4/tools/idf_monitor.py", line 228, in run
+    data = self.serial.read(self.serial.in_waiting or 1)
+  File "D:/Software/msys32_idf3-20200714/mingw32/lib/python3.8/site-packages/serial/serialwin32.py", line 257, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, '
+
+
+hongf@surfacePro7 MINGW32 /d/Git/esp32-aliyun-demo/examples/living_platform/led_strip
+$

@@ -1,0 +1,6 @@
+key,type,encoding,value
+aliyun-key,namespace,,
+DeviceName,data,string,esp32-led-strip
+DeviceSecret,data,string,nDv64A0i2Xs6VpoYoirFuyDc3AFWF7QX
+ProductKey,data,string,a1CBe1dhuIA
+ProductSecret,data,string,gePSEcfMD8V2OvUV
